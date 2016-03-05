@@ -1,0 +1,269 @@
+/*initialisation de la page */
+
+* {
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+}
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  height: 100vh;
+}
+
+/*mis en page du haut de page*/
+
+header {
+  height: 20%;
+  padding-top: 1%;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+/*mis en page de la photo principale et du texte descriptif*/
+
+
+/*ajout d'un scrool et modification de taille de photo*/
+
+main {
+  height: 60%;
+  overflow-y: scroll;
+  margin-bottom: 1%;
+}
+
+/*ajout des bordure a la photo*/
+
+.photoprincipale {
+  box-shadow: 10px 5px 12px #000;
+  border: 5px solid #1D70B8;
+  border-radius: 5px;
+}
+
+/*ajout du style au texte descriptif*/
+
+.description {
+  background-color: #F39200;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-family: Verdana;
+  color: white;
+  border: 4px solid #DF0613;
+  border-radius: 4px;
+  box-shadow: 6px 5px 25px #333333;
+}
+.p1, .p5 {
+  padding-left: 2%;
+}
+.p2, .p6 {
+  padding-left: 2%;
+}
+.p3, .p7 {
+  padding-left: 2%;
+}
+.p4 {
+  padding-left: 2%;
+  padding-right: 1%;
+}
+
+/*mis en page des 4 axes*/
+
+section {
+  border-top: 1px solid #94C11F;
+  border-bottom: 1px solid #F29100;
+  margin-bottom: 2%;
+  background-color:rgba(148, 193, 31, 0.26);
+}
+
+/*mis en page du texte de section*/
+
+section h1 {
+  text-align: center;
+  color: #848484;
+}
+
+/*placement et stylage des logo des axes*/
+
+.logoaxe {
+  margin-top: 5%;
+
+}
+.circle1 {
+  background-color: white;
+  text-align: center;
+  margin: auto;
+  border: 5px solid #94C11F;
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  box-shadow: -2px 5px 25px #333333;
+
+}
+.circle1:hover {
+  border: 5px solid #F29100;
+}
+
+.circle2 {
+  background-color: white;
+  text-align: center;
+  margin: auto;
+  border: 5px solid #1D70B8;
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  box-shadow: -2px 5px 25px #333333;
+
+}
+.circle2:hover {
+  border: 5px solid #E30613;
+}
+.circle3 {
+  background-color: white;
+  text-align: center;
+  margin: auto;
+  border: 5px solid #E30613;
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  box-shadow: -2px 5px 25px #333333;
+
+}
+.circle3:hover {
+  border: 5px solid #1D70B8;
+}
+.circle4 {
+  background-color: white;
+  text-align: center;
+  margin: auto;
+  border: 5px solid #F29100;
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  box-shadow: -2px 5px 25px #333333;
+
+}
+.circle4:hover {
+  border: 5px solid #94C11F;
+}
+
+/*1er logo*/
+.choisir p {
+  font-size: 15px;
+  font-weight : 800;
+}
+.tedee {
+margin-top: 2%;
+}
+.resine {
+  margin-top: 9%;
+  margin-left: -40%;
+}
+.evaleco {
+  margin-top: -9%;
+margin-left: 60%;
+}
+.capg {
+  margin-top: 3%;
+  margin-left: -52%;
+
+}
+.sescol {
+  margin-top: -20%;
+  margin-left: 56%;
+}
+.choisir {
+margin-left: 3%;
+margin-top: 1%;
+}
+
+/*2eme logo*/
+.eoep {
+  margin-top:-1%;
+  margin-bottom: -10%;
+}
+.initiative {
+  margin-left: 3%;
+  margin-top: -2%;
+}
+
+/*3eme logo*/
+.fdb {
+  margin-top: -12%;
+  margin-left: 60%;
+}
+.apese {
+  margin-top: -14%;
+  margin-left: 56%;
+}
+.apese p {
+  font-size: 15px;
+  font-weight : 800;
+}
+
+/*4eme logo*/
+.eric21 {
+  margin-top: -14%;
+  margin-left: 57%;
+
+}
+.fab {
+  margin-top: 6%;
+  margin-left: 3%;
+}
+.resine2 {
+  margin-top: 22%;
+  margin-left: -47%;
+}
+.eoep2 {
+  margin-top:5%;
+  margin-bottom: -10%;
+}
+
+/*placement des titres au dessus des logos*/
+.paxes1 {
+  text-align: center;
+  color: #94C11F;
+}
+.paxes2 {
+  text-align: center;
+  color: #1D70B8;
+}
+.paxes3 {
+  text-align: center;
+  color: #E30613;
+}
+.paxes4 {
+  text-align: center;
+  color: #F29100;
+}
+
+/*mis en page de contact*/
+
+footer {
+  height: 20%;
+  background-color: #1D70B8;
+  border-top: 1px solid #E30613;
+  box-shadow: 0px -9px 25px #333333;
+
+}
+.contact1 {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.contact1 h3 {
+  font-size: 30px;
+  color: white;
+}
+.contact1 p {
+  margin: auto;
+  margin-left: 20%;
+  color: white;
+  font-size: 15px;
+}
