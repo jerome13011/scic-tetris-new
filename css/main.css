@@ -27,11 +27,47 @@ header {
 /*mis en page de la photo principale et du texte descriptif*/
 
 
-/*ajout d'un scrool et modification de taille de photo*/
+/*bouton a cliqué*/
+.inclick {
+  margin: 0 auto;
+  margin-top: %;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  display: block;
+  font-size: 20px;
+  font-family: Verdana;
+  background-color: #94C11F;
+  color: white;
+  border-bottom: 2px solid #1D70B8;
+}
+.inclick:hover {
+  background-color: white;
+  color:#94C11F;
+  border-bottom: 2px solid #94C11F;
+}
+
+/*bouton a cliqué retour*/
+.onclick {
+  width: 15%;
+  height: 35px;
+  font-family: Verdana;
+  font-size: 18px;
+  float:right;
+  background-color: #94C11F;
+  margin-top: -6.50%;
+  margin-right:5%;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 7px 25px #333333;
+}
+.onclick:hover {
+  background-color: white;
+  color:#94C11F;
+  border: 2px solid #94C11F;
+}
 
 main {
-  height: 60%;
-  overflow-y: scroll;
   margin-bottom: 1%;
 }
 
@@ -79,7 +115,7 @@ section {
   border-top: 1px solid #94C11F;
   border-bottom: 1px solid #F29100;
   margin-bottom: 2%;
-  background-color:rgba(148, 193, 31, 0.26);
+  background-color: rgba(148, 193, 31, 0.26);
 }
 
 /*mis en page du texte de section*/
@@ -93,7 +129,6 @@ section h1 {
 
 .logoaxe {
   margin-top: 5%;
-
 }
 .circle1 {
   background-color: white;
@@ -104,12 +139,10 @@ section h1 {
   height: 180px;
   width: 180px;
   box-shadow: -2px 5px 25px #333333;
-
 }
 .circle1:hover {
   border: 5px solid #F29100;
 }
-
 .circle2 {
   background-color: white;
   text-align: center;
@@ -119,7 +152,6 @@ section h1 {
   height: 180px;
   width: 180px;
   box-shadow: -2px 5px 25px #333333;
-
 }
 .circle2:hover {
   border: 5px solid #E30613;
@@ -133,7 +165,6 @@ section h1 {
   height: 180px;
   width: 180px;
   box-shadow: -2px 5px 25px #333333;
-
 }
 .circle3:hover {
   border: 5px solid #1D70B8;
@@ -147,19 +178,19 @@ section h1 {
   height: 180px;
   width: 180px;
   box-shadow: -2px 5px 25px #333333;
-
 }
 .circle4:hover {
   border: 5px solid #94C11F;
 }
 
 /*1er logo*/
+
 .choisir p {
   font-size: 15px;
-  font-weight : 800;
+  font-weight: 800;
 }
 .tedee {
-margin-top: 2%;
+  margin-top: 2%;
 }
 .resine {
   margin-top: 9%;
@@ -167,25 +198,25 @@ margin-top: 2%;
 }
 .evaleco {
   margin-top: -9%;
-margin-left: 60%;
+  margin-left: 60%;
 }
 .capg {
   margin-top: 3%;
   margin-left: -52%;
-
 }
 .sescol {
   margin-top: -20%;
   margin-left: 56%;
 }
 .choisir {
-margin-left: 3%;
-margin-top: 1%;
+  margin-left: 3%;
+  margin-top: 1%;
 }
 
 /*2eme logo*/
+
 .eoep {
-  margin-top:-1%;
+  margin-top: -1%;
   margin-bottom: -10%;
 }
 .initiative {
@@ -194,6 +225,7 @@ margin-top: 1%;
 }
 
 /*3eme logo*/
+
 .fdb {
   margin-top: -12%;
   margin-left: 60%;
@@ -204,14 +236,14 @@ margin-top: 1%;
 }
 .apese p {
   font-size: 15px;
-  font-weight : 800;
+  font-weight: 800;
 }
 
 /*4eme logo*/
+
 .eric21 {
   margin-top: -14%;
   margin-left: 57%;
-
 }
 .fab {
   margin-top: 6%;
@@ -222,11 +254,12 @@ margin-top: 1%;
   margin-left: -47%;
 }
 .eoep2 {
-  margin-top:5%;
+  margin-top: 5%;
   margin-bottom: -10%;
 }
 
 /*placement des titres au dessus des logos*/
+
 .paxes1 {
   text-align: center;
   color: #94C11F;
@@ -251,7 +284,6 @@ footer {
   background-color: #1D70B8;
   border-top: 1px solid #E30613;
   box-shadow: 0px -9px 25px #333333;
-
 }
 .contact1 {
   margin-left: 20%;

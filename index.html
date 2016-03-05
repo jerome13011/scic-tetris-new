@@ -6,6 +6,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>SCIC Tetris</title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="js/main.js" type="text/javascript"></script>
+
+  </script>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/main.css">
@@ -25,7 +29,8 @@
   <!-- ajout de la photo principale et du texte descriptif -->
   <main>
     <img class="photoprincipale" src="img/Descrip2.png" alt="photo_batiment_tetris" width="100%" height="99%" />
-    <div class="description">
+    <input class="inclick" id="inclick" type="button" name="inclick" value="Afficher plus d'informations">
+    <div class="description" id="description">
       <p class="p1">
         PTCE TETRIS "Transition Ecologique Territoriale par la recherche et l'Innovation Sociale" Pour rappel le PTCE : La SCIC TETRIS porte le Pôle Territorial de Coopération Économique "Transition Écologique Territoriale par la recherche et l'Innovation Sociale"
         qui réunit des moyens d’accompagnement et des structures partenaires pour faire émerger et développer des activités socio-économiques favorisant à la fois le développement économique des structures membres et le développement local durable dans
@@ -69,6 +74,7 @@
           <li>Par du mécénat de compétences.</li>
         </ul>
       </div>
+      <input class="onclick" id="onclick" type="button" value="Quitter">
     </div>
   </main>
 
