@@ -22,6 +22,7 @@ header {
   text-align: center;
   margin: 0 auto;
   display: block;
+  border-bottom: 3px solid #878787;
 }
 
 /*mis en page de la barre de navigation*/
@@ -90,7 +91,7 @@ nav li:hover {
 
 .inclick {
   margin: 0 auto;
-  width: 100%;
+  width: 20%;
   height: 10%;
   text-align: center;
   display: block;
@@ -98,12 +99,15 @@ nav li:hover {
   font-family: Verdana;
   background-color: #94C11F;
   color: white;
-  border-bottom: 2px solid #1D70B8;
+  border: 2px solid #1D70B8;
+  border-radius: 5px;
+
 }
 .inclick:hover {
   background-color: white;
   color: #94C11F;
   border-bottom: 2px solid #94C11F;
+  border-top: 2px solid #94C11F;
 }
 
 /*bouton a cliqué retour*/
@@ -171,10 +175,11 @@ main {
 /*mis en page des 4 axes*/
 
 section {
-  border-top: 1px solid #94C11F;
-  border-bottom: 1px solid #F29100;
-  margin-bottom: 2%;
+  border-top: 5px solid #94C11F;
+  border-bottom: 5px solid #F29100;
   background-color: rgba(148, 193, 31, 0.26);
+  box-shadow: 0px 0px 50px #333333;
+
 }
 
 /*mis en page du texte de section*/
@@ -382,6 +387,15 @@ section h1 {
   background-color: white;
   border-radius: 5px;
   box-shadow: 2px 5px 17px #333333;
+}
+
+/*ajout du bloc pour la video*/
+.video1 {
+  background-color: white;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+  border: 3px solid black;
 }
 
 /*mis en page de contact*/

@@ -8,13 +8,14 @@
   <title>SCIC Tetris</title>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="js/main.js" type="text/javascript"></script>
-
-  </script>
+  <script src="js/parallax.js" type="text/javascript"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax-min.js"></script>
+  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/parallax.css" media="screen" type="text/css" charset="utf-8">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 
 <!-- ajout d'élement sur le site -->
@@ -40,58 +41,68 @@
     <img class="logot" src="img/logo_tetris.png" alt="logo_tetris" width="30%" height="85%" />
   </header>
 
-  <!-- ajout de la photo principale et du texte descriptif -->
-  <main>
-    <img class="photoprincipale" src="img/Descrip2.png" alt="photo_batiment_tetris" width="100%" height="99%" />
-    <input class="inclick" id="inclick" type="button" name="inclick" value="Afficher plus d'informations">
-    <div class="description" id="description">
-      <p class="p1">
-        PTCE TETRIS "Transition Ecologique Territoriale par la recherche et l'Innovation Sociale" Pour rappel le PTCE : La SCIC TETRIS porte le Pôle Territorial de Coopération Économique "Transition Écologique Territoriale par la recherche et l'Innovation Sociale"
-        qui réunit des moyens d’accompagnement et des structures partenaires pour faire émerger et développer des activités socio-économiques favorisant à la fois le développement économique des structures membres et le développement local durable dans
-        une démarche d’innovation sociale.
-      </p>
-      <p class="p2">
-        Pour ce faire, TETRIS met ainsi en dynamique un Centre de transfert non technologique, un Incubateur de projet, les activités socio-économiques d'entreprises classiques et de l’Économie Sociale et Solidaire exerçant des pratiques confirmées en termes
-        de développement soutenable ou souhaitant intégrer une démarche d'amélioration continue.
-      </p>
-      <p class="p3">
-        TETRIS c’est 1500 m2 de locaux industriels mutualisés, 79 emplois consolidés dont 43 en insertion sur 2015. Le PTCE TETRIS c’est un laboratoire opérationnel innovant qui met en place les conditions nécessaires à l’émergence de compétences collectives
-        au service de besoins non (ou mal) satisfaits sur un territoire guidé par quatre principes : une démarche de travail interactive dédiée à l’innovation sociale, une entité statutaire coopérative (SCIC), la co-production d'activités socio-économiques
-        (offre de services mutualisés) et d'événements collaboratifs territorialisés (colloques, séminaires, salons et marchés locaux), la recherche d'une visée stratégique commune du territoire.
-      </p>
-      <p class="p4">
-        Le PTCE TETRIS se sont également des partenaires associés à la démarche (situés en dehors des locaux) et notamment la recyclerie « Les fées contraires » portée par la Régie de quartier Soli-Cités qui ouvrira ses portes courant octobre au cœur du quartier
-        politique de la ville « Les Fleurs de Grasse ».
-      </p>
-      <p class="p5">
-        L'objectif : Contribuer au rayonnement et à l'attractivité du Pays de Grasse, en y expérimentant les leviers du developpement local durable, dans un processus d'innovation sociale.
-      </p>
-      <div class="p6">
-        Les 4 Axes d'activités-socio-économiques :
-        <ul>
-          <li> Gestion des ressources et des déchets.</li>
-          <li> Developpement des mobilités.</li>
-          <li> Produire et échanger autrement.</li>
-          <li> Developpement d'une économie sociale du numérique.</li>
-        </ul>
-      </div>
-      </p>
-      <div class="p7">
-        Comment participer à ce projet ?
-        <ul>
-          <li>En developpant des partenariat avec la SCIC TETRIS.</li>
-          <li>En co-construisant avec la SCIC TETRIS des projets répondant à vos besoins et à nos finalités.</li>
-          <li>En demandant à devenir associé de la SCIC.</li>
-          <li>En devevant mécéne (dans le cadre des incitations fiscales existantes)</li>
-          <li>Par du mécénat financier.</li>
-          <li>Par du mécénat en nature.</li>
-          <li>Par du mécénat de compétences.</li>
-        </ul>
-      </div>
-      <input class="onclick" id="onclick" type="button" value="Quitter">
-    </div>
-  </main>
 
+
+  <!-- ajout de la photo principale et du texte descriptif -->
+
+  <div id="slide1">
+    <div class="slide_inside">
+      <main>
+
+        <input class="inclick" id="inclick" type="button" name="inclick" value="Afficher plus d'informations">
+
+        <!-- Ajout de l'effet parallax -->
+
+
+        <div class="description" id="description">
+          <p class="p1">
+            PTCE TETRIS "Transition Ecologique Territoriale par la recherche et l'Innovation Sociale" Pour rappel le PTCE : La SCIC TETRIS porte le Pôle Territorial de Coopération Économique "Transition Écologique Territoriale par la recherche et l'Innovation Sociale"
+            qui réunit des moyens d’accompagnement et des structures partenaires pour faire émerger et développer des activités socio-économiques favorisant à la fois le développement économique des structures membres et le développement local durable
+            dans une démarche d’innovation sociale.
+          </p>
+          <p class="p2">
+            Pour ce faire, TETRIS met ainsi en dynamique un Centre de transfert non technologique, un Incubateur de projet, les activités socio-économiques d'entreprises classiques et de l’Économie Sociale et Solidaire exerçant des pratiques confirmées en termes
+            de développement soutenable ou souhaitant intégrer une démarche d'amélioration continue.
+          </p>
+          <p class="p3">
+            TETRIS c’est 1500 m2 de locaux industriels mutualisés, 79 emplois consolidés dont 43 en insertion sur 2015. Le PTCE TETRIS c’est un laboratoire opérationnel innovant qui met en place les conditions nécessaires à l’émergence de compétences collectives
+            au service de besoins non (ou mal) satisfaits sur un territoire guidé par quatre principes : une démarche de travail interactive dédiée à l’innovation sociale, une entité statutaire coopérative (SCIC), la co-production d'activités socio-économiques
+            (offre de services mutualisés) et d'événements collaboratifs territorialisés (colloques, séminaires, salons et marchés locaux), la recherche d'une visée stratégique commune du territoire.
+          </p>
+          <p class="p4">
+            Le PTCE TETRIS se sont également des partenaires associés à la démarche (situés en dehors des locaux) et notamment la recyclerie « Les fées contraires » portée par la Régie de quartier Soli-Cités qui ouvrira ses portes courant octobre au cœur du quartier
+            politique de la ville « Les Fleurs de Grasse ».
+          </p>
+          <p class="p5">
+            L'objectif : Contribuer au rayonnement et à l'attractivité du Pays de Grasse, en y expérimentant les leviers du developpement local durable, dans un processus d'innovation sociale.
+          </p>
+          <div class="p6">
+            Les 4 Axes d'activités-socio-économiques :
+            <ul>
+              <li> Gestion des ressources et des déchets.</li>
+              <li> Developpement des mobilités.</li>
+              <li> Produire et échanger autrement.</li>
+              <li> Developpement d'une économie sociale du numérique.</li>
+            </ul>
+          </div>
+          </p>
+          <div class="p7">
+            Comment participer à ce projet ?
+            <ul>
+              <li>En developpant des partenariat avec la SCIC TETRIS.</li>
+              <li>En co-construisant avec la SCIC TETRIS des projets répondant à vos besoins et à nos finalités.</li>
+              <li>En demandant à devenir associé de la SCIC.</li>
+              <li>En devevant mécéne (dans le cadre des incitations fiscales existantes)</li>
+              <li>Par du mécénat financier.</li>
+              <li>Par du mécénat en nature.</li>
+              <li>Par du mécénat de compétences.</li>
+            </ul>
+          </div>
+          <input class="onclick" id="onclick" type="button" value="Quitter">
+        </div>
+    </div>
+  </div>
+  </main>
   <section>
     <h1>4 Axes d'activités socios-économiques</h1>
     <div class="logoaxe">
@@ -199,9 +210,23 @@
         </div>
       </div>
     </div>
-
   </section>
+  <div id="slide2">
+    <div class="slide_inside">
+    </div>
+  </div>
+  <div id="slide3">
+    <div class="slide_inside">
 
+      <div class="video1">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+      </div>
+    </div>
+  </div>
   <footer>
     <div class="contact1">
       <h3>Contact :</h3>
