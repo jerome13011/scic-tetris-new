@@ -1,6 +1,6 @@
 $(document).ready(function() {
  // hides the slickbox as soon as the DOM is ready
-// $('#description').hide();
+$('#description').hide();
  // shows the slickbox on clicking the noted link
 $('#inclick').click(function() {
 $('#description').toggle('slow');

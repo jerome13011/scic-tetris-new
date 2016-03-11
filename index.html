@@ -22,37 +22,38 @@
 
 <body>
   <!-- Ajout de barre de nav -->
-
-  <!-- ajout du logo -->
   <nav>
     <input class="clic" id="clic" type="button" name="clic" value="Menu">
     <div id="navh" class="navh">
       <input class="X" id="X" type="bouton" name="X" value="X">
       <ul>
-        <li>Accueil</li>
-        <li>Gestions des ressources et des déchets</li>
+        <a href="index.html">
+          <li>Accueil</li>
+        </a>
+        <a href="gestionressources.html">
+          <li>Gestions des ressources et des déchets</li>
+        </a>
         <li>Développement des mobilités</li>
         <li>Produire et échanger autrement</li>
         <li>Développement d'une économie sociale du numérique</li>
       </ul>
     </div>
   </nav>
+  <!-- ajout du logo -->
   <header>
     <img class="logot" src="img/logo_tetris.png" alt="logo_tetris" width="30%" height="85%" />
   </header>
 
-
+  <div id="slide0">
+    <div class="slide_inside">
+    </div>
+  </div>
 
   <!-- ajout de la photo principale et du texte descriptif -->
-
   <div id="slide1">
     <div class="slide_inside">
+      <input class="inclick" id="inclick" type="button" name="inclick" value="Afficher plus d'informations">
       <main>
-
-        <input class="inclick" id="inclick" type="button" name="inclick" value="Afficher plus d'informations">
-
-        <!-- Ajout de l'effet parallax -->
-
 
         <div class="description" id="description">
           <p class="p1">
@@ -102,130 +103,138 @@
         </div>
     </div>
   </div>
+
   </main>
-  <section>
-    <h1>4 Axes d'activités socios-économiques</h1>
-    <div class="logoaxe">
-      <div class="row">
-        <div class="col-md-3 col-sm-3 col-xs-12">
-          <div class="paxes1">
-            <div class="circle1">
-              <div class="tedee">
-                <img src="img/Logo_TEDEE.png" alt="logo_tedee" width="25%" />
-              </div>
-              <div class="resine">
-                <img src="img/Sans titre-2.png" alt="logo_resine" width="25%" />
-              </div>
-              <div class="evaleco">
-                <img src="img/Logo_evaleco_long.jpg" alt="logo_evaleco" width="60%" />
-              </div>
-              <div class="capg">
-                <img src="img/logo-capg-bd.jpg" alt="logo_capg" width="25%" />
-              </div>
-              <div class="sescol">
-                <img src="img/logos_SES.jpg" alt="logo_sescol" width="40%" />
-              </div>
-              <div class="choisir">
-                <p>Choisir</p>
+  <div class="row">
+    <div class="col-md-12">
+      <section>
+        <h1>4 Axes d'activités socios-économiques</h1>
+        <div class="logoaxe">
+          <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-12">
+              <div class="paxes1">
+                <div class="circle1">
+                  <div class="tedee">
+                    <img src="img/Logo_TEDEE.png" alt="logo_tedee" width="25%" />
+                  </div>
+                  <div class="resine">
+                    <img src="img/Sans titre-2.png" alt="logo_resine" width="25%" />
+                  </div>
+                  <div class="evaleco">
+                    <img src="img/Logo_evaleco_long.jpg" alt="logo_evaleco" width="60%" />
+                  </div>
+                  <div class="capg">
+                    <img src="img/logo-capg-bd.jpg" alt="logo_capg" width="25%" />
+                  </div>
+                  <div class="sescol">
+                    <img src="img/logos_SES.jpg" alt="logo_sescol" width="40%" />
+                  </div>
+                  <div class="choisir">
+                    <p>Choisir</p>
+                  </div>
+                </div>
+                <h3>
+                  Gestions des ressources et des déchets
+                </h3>
               </div>
             </div>
-            <h3>
-              Gestions des ressources et des déchets
-            </h3>
+            <div class="col-md-3 col-sm-3 col-xs-12">
+              <div class="paxes2">
+                <div class="circle2">
+                  <div class="eoep">
+                    <img src="img/Logo-EOEP-rogné-transparent-petit.png" alt="logo_eoep" width="22%" />
+                  </div>
+                  <div class="resine">
+                    <img src="img/Sans titre-2.png" alt="logo_resine" width="25%" />
+                  </div>
+                  <div class="evaleco">
+                    <img src="img/Logo_evaleco_long.jpg" alt="logo_evaleco" width="60%" />
+                  </div>
+                  <div class="capg">
+                    <img src="img/logo-capg-bd.jpg" alt="logo_capg" width="25%" />
+                  </div>
+                  <div class="sescol">
+                    <img src="img/logos_SES.jpg" alt="logo_sescol" width="40%" />
+                  </div>
+                  <div class="initiative">
+                    <img src="img/logo-initiative-emploi.png" alt="logo_initiative" width="40%" />
+                  </div>
+                </div>
+                <h3>
+                  Développement des mobiltés
+                </h3>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12">
+              <div class="paxes3">
+                <div class="circle3">
+                  <div class="tedee">
+                    <img src="img/Logo_TEDEE.png" alt="logo_tedee" width="25%" />
+                  </div>
+                  <div class="resine">
+                    <img src="img/Sans titre-2.png" alt="logo_resine" width="25%" />
+                  </div>
+                  <div class="fdb">
+                    <img src="img/logo_fdb_maxi.jpg" alt="logo_evaleco" width="63%" />
+                  </div>
+                  <div class="capg">
+                    <img src="img/logo-capg-bd.jpg" alt="logo_capg" width="25%" />
+                  </div>
+                  <div class="apese">
+                    <p>
+                      Apese
+                    </p>
+                  </div>
+                </div>
+                <h3>
+                  Produire et échanger autrement
+                </h3>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12">
+              <div class="paxes4">
+                <div class="circle4">
+                  <div class="eoep2">
+                    <img src="img/Logo-EOEP-rogné-transparent-petit.png" alt="logo_eoep" width="22%" />
+                  </div>
+                  <div class="resine2">
+                    <img src="img/Sans titre-2.png" alt="logo_resine" width="25%" />
+                  </div>
+                  <div class="eric21">
+                    <img src="img/logo_numeric21.jpg" alt="logo_eric21" width="70%" />
+                  </div>
+                  <div class="fab">
+                    <img src="img/logo.jpg" alt="logo_fablab" width="25%" />
+                  </div>
+                </div>
+                <h3>
+                  Développement d'une économie sociale du numérique
+                </h3>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-md-3 col-sm-3 col-xs-12">
-          <div class="paxes2">
-            <div class="circle2">
-              <div class="eoep">
-                <img src="img/Logo-EOEP-rogné-transparent-petit.png" alt="logo_eoep" width="22%" />
-              </div>
-              <div class="resine">
-                <img src="img/Sans titre-2.png" alt="logo_resine" width="25%" />
-              </div>
-              <div class="evaleco">
-                <img src="img/Logo_evaleco_long.jpg" alt="logo_evaleco" width="60%" />
-              </div>
-              <div class="capg">
-                <img src="img/logo-capg-bd.jpg" alt="logo_capg" width="25%" />
-              </div>
-              <div class="sescol">
-                <img src="img/logos_SES.jpg" alt="logo_sescol" width="40%" />
-              </div>
-              <div class="initiative">
-                <img src="img/logo-initiative-emploi.png" alt="logo_initiative" width="40%" />
-              </div>
-            </div>
-            <h3>
-              Développement des mobiltés
-            </h3>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-3 col-xs-12">
-          <div class="paxes3">
-            <div class="circle3">
-              <div class="tedee">
-                <img src="img/Logo_TEDEE.png" alt="logo_tedee" width="25%" />
-              </div>
-              <div class="resine">
-                <img src="img/Sans titre-2.png" alt="logo_resine" width="25%" />
-              </div>
-              <div class="fdb">
-                <img src="img/logo_fdb_maxi.jpg" alt="logo_evaleco" width="63%" />
-              </div>
-              <div class="capg">
-                <img src="img/logo-capg-bd.jpg" alt="logo_capg" width="25%" />
-              </div>
-              <div class="apese">
-                <p>
-                  Apese
-                </p>
-              </div>
-            </div>
-            <h3>
-              Produire et échanger autrement
-            </h3>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-3 col-xs-12">
-          <div class="paxes4">
-            <div class="circle4">
-              <div class="eoep2">
-                <img src="img/Logo-EOEP-rogné-transparent-petit.png" alt="logo_eoep" width="22%" />
-              </div>
-              <div class="resine2">
-                <img src="img/Sans titre-2.png" alt="logo_resine" width="25%" />
-              </div>
-              <div class="eric21">
-                <img src="img/logo_numeric21.jpg" alt="logo_eric21" width="70%" />
-              </div>
-              <div class="fab">
-                <img src="img/logo.jpg" alt="logo_fablab" width="25%" />
-              </div>
-            </div>
-            <h3>
-              Développement d'une économie sociale du numérique
-            </h3>
-          </div>
+      </section>
+      <div id="slide2">
+        <div class="slide_inside">
         </div>
       </div>
-    </div>
-  </section>
-  <div id="slide2">
-    <div class="slide_inside">
-    </div>
-  </div>
-  <div id="slide3">
-    <div class="slide_inside">
+      <!-- Ajout de la video -->
+      <div class="Inauguration">
+        <h3>Inauguration des locaux de la SCIC TETRIS</h3>
 
-      <div class="video1">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+      </div>
+      <div id="video">
+
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/d8dDnXyRyoA" frameborder="0" allowfullscreen>
+          </iframe>
+
+
+
 
       </div>
     </div>
+
   </div>
   <footer>
     <div class="contact1">

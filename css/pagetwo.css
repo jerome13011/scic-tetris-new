@@ -1,0 +1,350 @@
+/*initialisation de la page */
+
+* {
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+}
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/*mis en page du haut de page*/
+
+header {
+  padding-top: 1%;
+  padding-bottom: 3%;
+  text-align: center;
+  background-color: white;
+  color: #94C11F;
+  border-bottom: 2px solid #878787;
+}
+
+/*mis en page de la barre de navigation*/
+
+nav {
+  margin-left: 1%;
+  margin-top: 1%;
+  position: fixed;
+  z-index: 10;
+  font-family: Verdana;
+}
+
+/*taille et couleur du boutton*/
+
+.clic {
+  width: 60px;
+  height: 50px;
+  background-color: rgb(29, 112, 184);
+  border: 2px solid black;
+}
+
+/*effet de la souris*/
+
+.clic:hover {
+  color: white;
+  border: 2px solid white;
+}
+.navh {
+  background-color: rgb(29, 112, 184);
+  margin-top: 5%;
+  border: 2px solid black;
+}
+
+/*custom du boutton X*/
+
+.X {
+  cursor: pointer;
+  text-align: center;
+  background-color: rgb(29, 112, 184);
+  color: black;
+  width: 10%;
+  float: right;
+  margin-right: 2%;
+  margin-top: 2%;
+  font-size: 30px;
+  border: 2px solid black;
+  font-weight: bold;
+}
+.X:hover {
+  color: white;
+  border: 2px solid white;
+}
+
+/*texte a l'intérieur du menu*/
+
+nav ul {
+  list-style: none;
+  margin-right: 2%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  color: black;
+}
+nav li {
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 10%;
+  padding-bottom: 6%;
+  border-bottom: 2px solid black;
+}
+nav li:hover {
+  color: white;
+}
+a:visited {
+  color: black;
+}
+
+/*Placement et stylage a l'interieur de la balise main*/
+
+
+/*mis en plage de présentation */
+
+.presentation1 {
+  border-top: 2px solid #175624;
+  border-bottom: 2px solid #175624;
+}
+.presentation2 {
+  border-top: 2px solid #F37022;
+  border-bottom: 2px solid #F37022;
+}
+.presentation3 {
+  border-top: 2px solid #639A1A;
+  border-bottom: 2px solid #639A1A;
+}
+.presentation4 {
+  border-top: 2px solid #70B220;
+  border-bottom: 2px solid #70B220;
+}
+.presentation5 {
+  border-top: 2px solid #FD8412;
+  border-bottom: 2px solid #FD8412;
+}
+.presentation6 {
+  border-top: 2px solid #FD8412;
+  border-bottom: 2px solid #FD8412;
+}
+
+/*mis en place du logo*/
+
+.tedee {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 2%;
+}
+.choisir {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 2%;
+}
+.resine {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 2%;
+}
+.evaleco {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 2%;
+}
+.capg {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 2%;
+}
+.sescol {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 2%;
+}
+/*ajout du style au texte descriptif*/
+
+.description {
+  background-color: white;
+  padding-top: 1%;
+  box-shadow: 0px -11px 19px #333333;
+}
+.description2 {
+  background-color: white;
+  padding-top: 1%;
+  box-shadow: 0px -11px 19px #333333;
+}
+.description3 {
+  background-color: white;
+  padding-top: 1%;
+  box-shadow: 0px -11px 19px #333333;
+}
+.description4 {
+  background-color: white;
+  padding-top: 1%;
+  box-shadow: 0px -11px 19px #333333;
+}
+.description5 {
+  background-color: white;
+  padding-top: 1%;
+  box-shadow: 0px -11px 19px #333333;
+}
+.description6 {
+  background-color: white;
+  padding-top: 1%;
+  box-shadow: 0px -11px 19px #333333;
+}
+/*ajout du style au paragraphe du texte descriptif*/
+
+.description p {
+  font-family: Verdana;
+  font-size: 14px;
+  color: #175624;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.description2 p {
+  font-family: Verdana;
+  font-size: 14px;
+  color: #F37022;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.description3 p {
+  font-family: Verdana;
+  font-size: 14px;
+  color: #639A1A;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.description4 p {
+  font-family: Verdana;
+  font-size: 14px;
+  color: #70B220;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.description4 ul {
+  font-family: Verdana;
+  font-size: 14px;
+  color: #70B220;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.description5 p {
+  font-family: Verdana;
+  font-size: 14px;
+  color: #655546;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.description6 p {
+  font-family: Verdana;
+  font-size: 14px;
+  color: #655546;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+/*Ajout du lien de redirection vers le site web*/
+
+.lien1 p {
+  color: #0C3A63;
+  margin-left: 2%;
+}
+.lien1 p:hover {
+  color: black;
+}
+
+/*mis en page des 4 axes*/
+
+section {
+  border-top: 3px solid #94C11F;
+  border-bottom: 3px solid #F29100;
+  background-color: rgba(148, 193, 31, 0.26);
+  box-shadow: 0px 14px 13px #333333;
+}
+
+/*mis en page du texte de section*/
+
+section h1 {
+  text-align: center;
+  color: #848484;
+}
+
+/*placement et stylage des logo des axes*/
+
+.logoaxe {
+  margin-top: 5%;
+}
+
+/*placement des titres au dessous des logos*/
+
+
+/*Inauguration*/
+
+.Inauguration {
+  width: 100%;
+  text-align: center;
+  font-family: Verdana;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  background-color: black;
+  color: white;
+  box-shadow: 0px -10px 13px #333333;
+}
+
+/*mis en page de contact*/
+
+footer {
+  height: 20%;
+  background-color: #1D70B8;
+  border-top: 1px solid #E30613;
+  box-shadow: 0px -9px 25px #333333;
+}
+.contact1 {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.contact1 h3 {
+  font-size: 30px;
+  color: white;
+}
+.contact1 p {
+  margin: auto;
+  margin-left: 20%;
+  color: white;
+  font-size: 15px;
+}
+
+/*effet parallax*/
+
+#slide0 {
+  height: 47vh;
+  background: url(../img/20160309_143554.jpg) 0 no-repeat fixed;
+  background-size: cover;
+  z-index: 100;
+}
+#slide1 {
+  height: 48vh;
+  background: url(../img/20160308_145117.jpg) 0 no-repeat fixed;
+  background-size: cover;
+  z-index: 100;
+}
+#slide2 {
+  height: 50vh;
+  background: url(../img/20160308_144812.jpg) center 0 no-repeat fixed;
+  background-size: cover;
+}
+#slide3 {
+  height: 50vh;
+  background: url(../img/20160308_144523.jpg) center 0 no-repeat fixed;
+  background-size: cover;
+}
+#slide4 {
+  height: 50vh;
+  background: url(../img/20160308_144523.jpg) center 0 no-repeat fixed;
+  background-size: cover;
+}
