@@ -31,9 +31,7 @@ nav {
   position: fixed;
   z-index: 10;
   font-family: Verdana;
-}
-
-/*taille et couleur du boutton*/
+  }
 
 .clic {
   width: 60px;
@@ -41,21 +39,17 @@ nav {
   background-color: rgb(29, 112, 184);
   border: 2px solid black;
 }
-
-/*effet de la souris*/
-
 .clic:hover {
   color: white;
   border: 2px solid white;
-}
+  }
+
 .navh {
   background-color: rgb(29, 112, 184);
   margin-top: 5%;
   border: 2px solid black;
+
 }
-
-/*custom du boutton X*/
-
 .X {
   cursor: pointer;
   text-align: center;
@@ -67,15 +61,12 @@ nav {
   margin-top: 2%;
   font-size: 30px;
   border: 2px solid black;
-  font-weight: bold;
+  font-weight : bold;
 }
 .X:hover {
   color: white;
   border: 2px solid white;
 }
-
-/*texte a l'intérieur du menu*/
-
 nav ul {
   list-style: none;
   margin-right: 2%;
@@ -84,18 +75,16 @@ nav ul {
   color: black;
 }
 nav li {
+  color: black;
   cursor: pointer;
-  font-size: 15px;
+  font-size: small;
   margin-top: 10%;
-  padding-bottom: 6%;
   border-bottom: 2px solid black;
 }
 nav li:hover {
   color: white;
 }
-a:visited {
-  color: black;
-}
+a:visited {color: #800000;}
 
 /*Placement et stylage a l'interieur de la balise main*/
 
@@ -124,7 +113,7 @@ a:visited {
 }
 .presentation6 {
   border-top: 2px solid #FD8412;
-  border-bottom: 2px solid #FD8412;
+
 }
 
 /*mis en place du logo*/
@@ -244,7 +233,14 @@ a:visited {
 .description6 p {
   font-family: Verdana;
   font-size: 14px;
-  color: #655546;
+  color: black;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.description6 ul {
+  font-family: Verdana;
+  font-size: 14px;
+  color: black;
   margin-left: 25%;
   margin-right: 25%;
 }
@@ -280,44 +276,69 @@ section h1 {
   margin-top: 5%;
 }
 
-/*placement des titres au dessous des logos*/
-
-
-/*Inauguration*/
-
-.Inauguration {
-  width: 100%;
-  text-align: center;
-  font-family: Verdana;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
-  background-color: black;
-  color: white;
-  box-shadow: 0px -10px 13px #333333;
-}
-
 /*mis en page de contact*/
 
 footer {
-  height: 20%;
-  background-color: #1D70B8;
-  border-top: 1px solid #E30613;
-  box-shadow: 0px -9px 25px #333333;
+  width: 100%;
+  height: 50%;
+  border-top: 2px solid #E30613;
 }
+
+/*mis en page du cadre de contact*/
+
 .contact1 {
-  margin-left: 20%;
-  margin-right: 20%;
-}
-.contact1 h3 {
-  font-size: 30px;
-  color: white;
-}
-.contact1 p {
+  width: 25%;
   margin: auto;
-  margin-left: 20%;
-  color: white;
-  font-size: 15px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding-bottom: 1%;
+  background-color: #F29100;
+  text-align: center;
+  display: block;
+  border-radius: 5px;
+  box-shadow: 8px -7px 22px #333333;
+
 }
+
+/*mis en page du texte contact*/
+
+.contact1 h3 {
+  color: white;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border-bottom: 1px solid white;
+  font-size: 25px;
+}
+
+/*mis en page de nous contacter*/
+
+.contact1 p {
+  color: white;
+  float: left;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 3%;
+  font-size: 18px;
+}
+
+/*mis en page du boutton contact*/
+
+.lcontact {
+  background-color: #94C11F;
+  border: 1px solid white;
+  color: white;
+  font-size: 22px;
+  margin-top: 2%;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 8px 6px 8px white;
+}
+.lcontact:hover {
+  background-color: white;
+  border: 1px solid #878787;
+  color: black;
+}
+
 
 /*effet parallax*/
 
@@ -348,3 +369,56 @@ footer {
   background: url(../img/20160308_144523.jpg) center 0 no-repeat fixed;
   background-size: cover;
 }
+#slide5 {
+  height: 50vh;
+  background: url(../img/20160309_144023.jpg) center 0 no-repeat fixed;
+  background-size: cover;
+}
+
+/*--------------------------------fin de page gestion et ressource des dechets---------------------------------------------*/
+
+/*--------------------------------fin de page developpement des mobilités ---------------------------------------------*/
+
+/*--------------------------------fin de page produire et échanger autrement---------------------------------------------*/
+
+/*--------------------------------fin de page developpement d'une économie sociale du numérique---------------------------------------------*/
+
+
+/*slide terre d'innovation*/
+#slide6 {
+  height: 81vh;
+  background: url(../img/20160308_145404.jpg) 0 no-repeat fixed;
+  background-size: cover;
+}
+
+/*mis en page du haut de page*/
+.header1 {
+  padding-top: 1%;
+  padding-bottom: 3%;
+  text-align: center;
+  background-color: white;
+  color: #94C11F;
+  border-bottom: 2px solid #878787;
+}
+
+
+/*--------------------------------fin de page terre d'innovation---------------------------------------------*/
+
+/*slide Centre de recherche*/
+#slide7 {
+  height: 81vh;
+  background: url(../img/20160308_145404.jpg) 0 no-repeat fixed;
+  background-size: cover;
+}
+
+/*mis en page du haut de page*/
+.header2 {
+  padding-top: 1%;
+  padding-bottom: 3%;
+  text-align: center;
+  background-color: white;
+  color: #94C11F;
+  border-bottom: 2px solid #878787;
+}
+
+/*--------------------------------fin de page Centre de recherche---------------------------------------------*/

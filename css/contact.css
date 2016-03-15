@@ -1,0 +1,134 @@
+/*initialisation de la page */
+
+* {
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+}
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/*mis en page du haut de page*/
+
+header {
+  height: 20%;
+  padding-top: 1%;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  border-bottom: 3px solid #878787;
+  z-index: 100;
+}
+
+/*mis en page de la barre de navigation*/
+
+nav {
+  margin-left: 1%;
+  margin-top: 1%;
+  position: fixed;
+  z-index: 10;
+  font-family: Verdana;
+}
+.clic {
+  width: 60px;
+  height: 50px;
+  background-color: rgb(29, 112, 184);
+  border: 2px solid black;
+}
+.clic:hover {
+  color: white;
+  border: 2px solid white;
+}
+.navh {
+  background-color: rgb(29, 112, 184);
+  margin-top: 5%;
+  border: 2px solid black;
+}
+.X {
+  cursor: pointer;
+  text-align: center;
+  background-color: rgb(29, 112, 184);
+  color: black;
+  width: 10%;
+  float: right;
+  margin-right: 2%;
+  margin-top: 2%;
+  font-size: 30px;
+  border: 2px solid black;
+  font-weight: bold;
+}
+.X:hover {
+  color: white;
+  border: 2px solid white;
+}
+nav ul {
+  list-style: none;
+  margin-right: 2%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  color: black;
+}
+nav li {
+  cursor: pointer;
+  font-size: small;
+  margin-top: 10%;
+  border-bottom: 2px solid black;
+}
+nav li:hover {
+  color: white;
+}
+a:visited {
+  color: #800000;
+}
+
+/*bouton a cliqué*/
+
+.bg {
+  background: url(../img/20160308_144718.jpg) 0 no-repeat fixed;
+  background-size: cover;
+  background-position: center;
+}
+.contact {
+  margin-bottom: 3%;
+  padding-top: 10%;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+.contactint {
+  padding-left: 5%;
+  box-shadow: 8px -9px 17px #333333;
+  border: 2px solid #1D70B8;
+  background-color: white;
+  border-radius: 4px;
+  color: #868686;
+}
+.accueil {
+  float: right;
+  margin-right: 3%;
+  background-color: #1D70B8;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 8px 6px 8px black;
+}
+.accueil:hover {
+  background-color: white;
+  color: #1D70B8;
+  border: 2px solid #1D70B8;
+}
+
+/*googlemap*/
+
+.map {
+  text-align: center;
+  margin: auto;
+}
+.map iframe {
+  padding-top: -5%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  }
