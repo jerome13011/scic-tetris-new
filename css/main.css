@@ -29,7 +29,7 @@ nav {
   margin-left: 1%;
   margin-top: 1%;
   position: fixed;
-  z-index: 10;
+  z-index: 500;
   font-family: Verdana;
 }
 .clic {
@@ -83,6 +83,74 @@ nav li:hover {
 }
 nav li:visited {
   color: #800000;
+}
+
+/*mis en place du bloc projet de territoire*/
+
+.bterritoire {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center;
+  display: block;
+  margin: auto;
+  border-radius: 1px;
+}
+
+/*mis en place des formes rond triange*/
+
+.rondone {
+  cursor: pointer;
+  float: right;
+  margin-right: -30%;
+  margin-top: 18%;
+}
+.rondone:hover {
+  border-bottom: 3px solid #425A01;
+}
+
+/*mis en place du texte dans le 1er rond*/
+
+.rondone p {
+  color: #909090;
+  text-align: center;
+  margin-top: 37%;
+  font-size: 20px;
+  /*mis en place du 2eme rond*/
+}
+.rondtwo {
+  cursor: pointer;
+  text-align: center;
+  margin: auto;
+}
+.rondtwo:hover {
+  border-top: 4px solid #005CA6;
+}
+
+
+  /*mis en place du 3eme rond*/
+.triangletwo {
+  position: relative;
+  text-align: center;
+  display: block;
+  margin: auto;
+  padding-bottom: 5%;
+  z-index: 10;
+}
+.triangletwo:hover {
+  border-bottom: 4px solid #F78E00;
+}
+
+/*mis en place du 3eme ronds*/
+.rondthree {
+  cursor: pointer;
+  text-align: center;
+  margin: auto;
+  float: left;
+  margin-top: 18%;
+  margin-left: -30%;
+}
+.rondthree:hover {
+  border-bottom: 4px solid #D21C11;
 }
 
 /*bouton a cliqué*/
@@ -424,7 +492,7 @@ section h1 {
   border: none;
   border-radius: 3px;
   color: white;
-  font-size: 20px;
+  font-size: 15px;
 }
 .decrypter {
   margin-bottom: 4%;
@@ -432,7 +500,7 @@ section h1 {
   border: none;
   border-radius: 3px;
   color: white;
-  font-size: 20px;
+  font-size: 15px;
 }
 .creation:hover {
   background-color: white;
@@ -512,7 +580,7 @@ footer {
   margin-top: 2%;
   border-radius: 5px;
   cursor: pointer;
-  box-shadow: 8px 6px 8px white;
+  box-shadow: 8px 6px 8px #694817;
 }
 .lcontact:hover {
   background-color: white;

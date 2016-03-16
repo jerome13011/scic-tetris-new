@@ -31,8 +31,7 @@ nav {
   position: fixed;
   z-index: 10;
   font-family: Verdana;
-  }
-
+}
 .clic {
   width: 60px;
   height: 50px;
@@ -42,13 +41,11 @@ nav {
 .clic:hover {
   color: white;
   border: 2px solid white;
-  }
-
+}
 .navh {
   background-color: rgb(29, 112, 184);
   margin-top: 5%;
   border: 2px solid black;
-
 }
 .X {
   cursor: pointer;
@@ -61,7 +58,7 @@ nav {
   margin-top: 2%;
   font-size: 30px;
   border: 2px solid black;
-  font-weight : bold;
+  font-weight: bold;
 }
 .X:hover {
   color: white;
@@ -84,7 +81,9 @@ nav li {
 nav li:hover {
   color: white;
 }
-a:visited {color: #800000;}
+a:visited {
+  color: #800000;
+}
 
 /*Placement et stylage a l'interieur de la balise main*/
 
@@ -113,7 +112,6 @@ a:visited {color: #800000;}
 }
 .presentation6 {
   border-top: 2px solid #FD8412;
-
 }
 
 /*mis en place du logo*/
@@ -154,6 +152,7 @@ a:visited {color: #800000;}
   display: block;
   margin-bottom: 2%;
 }
+
 /*ajout du style au texte descriptif*/
 
 .description {
@@ -186,6 +185,7 @@ a:visited {color: #800000;}
   padding-top: 1%;
   box-shadow: 0px -11px 19px #333333;
 }
+
 /*ajout du style au paragraphe du texte descriptif*/
 
 .description p {
@@ -244,6 +244,7 @@ a:visited {color: #800000;}
   margin-left: 25%;
   margin-right: 25%;
 }
+
 /*Ajout du lien de redirection vers le site web*/
 
 .lien1 p {
@@ -276,6 +277,39 @@ section h1 {
   margin-top: 5%;
 }
 
+/*mis en place du bouton next*/
+
+.next {
+  margin-right: 1%;
+  float: right;
+  border: 1px solid #E30613;
+  color: #E30613;
+  background-color: white;
+  border-radius: 5px;
+}
+.next:hover {
+  border: 1px solid white;
+  color: white;
+  background-color: #E30613;
+}
+
+
+/*mis en place du bouton previous*/
+.previous {
+  margin-left: 1%;
+  float: left;
+  border: 1px solid #E30613;
+  color: #E30613;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.previous:hover {
+  border: 1px solid white;
+  color: white;
+  background-color: #E30613;
+}
+
 /*mis en page de contact*/
 
 footer {
@@ -297,7 +331,6 @@ footer {
   display: block;
   border-radius: 5px;
   box-shadow: 8px -7px 22px #333333;
-
 }
 
 /*mis en page du texte contact*/
@@ -331,14 +364,13 @@ footer {
   margin-top: 2%;
   border-radius: 5px;
   cursor: pointer;
-  box-shadow: 8px 6px 8px white;
+  box-shadow: 8px 6px 8px #694817;
 }
 .lcontact:hover {
   background-color: white;
   border: 1px solid #878787;
   color: black;
 }
-
 
 /*effet parallax*/
 
@@ -348,6 +380,11 @@ footer {
   background-size: cover;
   z-index: 100;
 }
+#slide01 {
+  height: 50vh;
+  background: url(../img/grasse.jpg) center 0 no-repeat fixed;
+  background-size: cover;
+}
 #slide1 {
   height: 48vh;
   background: url(../img/20160308_145117.jpg) 0 no-repeat fixed;
@@ -356,7 +393,7 @@ footer {
 }
 #slide2 {
   height: 50vh;
-  background: url(../img/20160308_144812.jpg) center 0 no-repeat fixed;
+  background: url(../img/20160309_143742.jpg) center 0 no-repeat fixed;
   background-size: cover;
 }
 #slide3 {
@@ -377,14 +414,319 @@ footer {
 
 /*--------------------------------fin de page gestion et ressource des dechets---------------------------------------------*/
 
+
+/*mis en plage de présentation */
+
+.presentation7 {
+  border-top: 2px solid #175624;
+  border-bottom: 2px solid #175624;
+}
+.presentation8 {
+  border-top: 2px solid #F37022;
+  border-bottom: 2px solid #F37022;
+}
+.presentation9 {
+  border-top: 2px solid #639A1A;
+  border-bottom: 2px solid #639A1A;
+}
+.presentation10 {
+  border-top: 2px solid #4C4B4E;
+  border-bottom: 2px solid #4C4B4E;
+}
+.presentation11 {
+  border-top: 2px solid #FD8412;
+  border-bottom: 2px solid #FD8412;
+}
+.presentation12 {
+  border-top: 2px solid #FD8412;
+}
+
+/*mis en place du logo*/
+
+.eoep {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 2%;
+}
+.resine {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 2%;
+}
+.iniemploi {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 2%;
+}
+.capg {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 2%;
+}
+
+/*ajout du style au texte descriptif*/
+
+.description7 {
+  background-color: white;
+  padding-top: 1%;
+  box-shadow: 0px -11px 19px #333333;
+}
+.description8 {
+  background-color: white;
+  padding-top: 1%;
+  box-shadow: 0px -11px 19px #333333;
+}
+.description9 {
+  background-color: white;
+  padding-top: 1%;
+  box-shadow: 0px -11px 19px #333333;
+}
+.description10 {
+  background-color: white;
+  padding-top: 1%;
+  box-shadow: 0px -11px 19px #333333;
+}
+.description11 {
+  background-color: white;
+  padding-top: 1%;
+  box-shadow: 0px -11px 19px #333333;
+}
+.description12 {
+  background-color: white;
+  padding-top: 1%;
+  box-shadow: 0px -11px 19px #333333;
+}
+
+/*ajout du style au paragraphe du texte descriptif*/
+
+.description7 p {
+  font-family: Verdana;
+  font-size: 14px;
+  color: #175624;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.description7 ul {
+  font-family: Verdana;
+  font-size: 14px;
+  color: #175624;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.description8 p {
+  font-family: Verdana;
+  font-size: 14px;
+  color: #F37022;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.description9 p {
+  font-family: Verdana;
+  font-size: 14px;
+  color: #639A1A;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.description10 p {
+  font-family: Verdana;
+  font-size: 14px;
+  color: #4C4B4E;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.description10 ul {
+  font-family: Verdana;
+  font-size: 14px;
+  color: #70B220;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.description11 p {
+  font-family: Verdana;
+  font-size: 14px;
+  color: #655546;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.description12 p {
+  font-family: Verdana;
+  font-size: 14px;
+  color: black;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+#slide8 {
+  height: 50vh;
+  background: url(../img/20160309_142150.jpg) center 0 no-repeat fixed;
+  background-size: cover;
+}
+#slide9 {
+  height: 50vh;
+  background: url(../img/20160308_144812.jpg) center 0 no-repeat fixed;
+  background-size: cover;
+}
 /*--------------------------------fin de page developpement des mobilités ---------------------------------------------*/
 
+
+
+/*mis en plage de présentation */
+
+.presentation13 {
+  border-top: 2px solid #175624;
+  border-bottom: 2px solid #175624;
+}
+.presentation14 {
+  border-top: 2px solid #F37022;
+  border-bottom: 2px solid #F37022;
+}
+.presentation15 {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.presentation16 {
+  border-top: 2px solid #4C4B4E;
+  border-bottom: 2px solid #4C4B4E;
+}
+.presentation17 {
+  border-top: 2px solid #FD8412;
+  border-bottom: 2px solid #FD8412;
+}
+.presentation18 {
+  border-top: 2px solid #FD8412;
+}
+
+/*mis en place du logo*/
+
+.fdb {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 2%;
+}
+.appeze {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 2%;
+}
+
+/*ajout du style au texte descriptif*/
+
+.description13 {
+  background-color: white;
+  padding-top: 1%;
+  box-shadow: 0px -11px 19px #333333;
+}
+.description14 {
+  background-color: white;
+  padding-top: 1%;
+  box-shadow: 0px -11px 19px #333333;
+}
+.description15 {
+  background-color: white;
+  padding-top: 1%;
+  box-shadow: 0px -11px 19px #333333;
+}
+.description16 {
+  background-color: white;
+  padding-top: 1%;
+  box-shadow: 0px -11px 19px #333333;
+}
+.description17 {
+  background-color: white;
+  padding-top: 1%;
+  box-shadow: 0px -11px 19px #333333;
+}
+.description18 {
+  background-color: white;
+  padding-top: 1%;
+  box-shadow: 0px -11px 19px #333333;
+}
+
+/*ajout du style au paragraphe du texte descriptif*/
+
+.description13 p {
+  font-family: Verdana;
+  font-size: 14px;
+  color: #175624;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.description13 ul {
+  font-family: Verdana;
+  font-size: 14px;
+  color: #175624;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.description14 p {
+  font-family: Verdana;
+  font-size: 14px;
+  color: #F37022;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.description15 p {
+  font-family: Verdana;
+  font-size: 14px;
+  color: black;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.description16 p {
+  font-family: Verdana;
+  font-size: 14px;
+  color: #4C4B4E;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.description16 ul {
+  font-family: Verdana;
+  font-size: 14px;
+  color: #70B220;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.description17 p {
+  font-family: Verdana;
+  font-size: 14px;
+  color: #655546;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.description17 p {
+  font-family: Verdana;
+  font-size: 14px;
+  color: #B8860B;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.description17 ul {
+  font-family: Verdana;
+  font-size: 14px;
+  color: #B8860B;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.description17 h1 {
+  text-align: center;
+  margin-bottom: 2%;
+  font-size: 45px;
+  color: #B8860B;
+}
 /*--------------------------------fin de page produire et échanger autrement---------------------------------------------*/
+
 
 /*--------------------------------fin de page developpement d'une économie sociale du numérique---------------------------------------------*/
 
 
 /*slide terre d'innovation*/
+
 #slide6 {
   height: 81vh;
   background: url(../img/20160308_145404.jpg) 0 no-repeat fixed;
@@ -392,6 +734,7 @@ footer {
 }
 
 /*mis en page du haut de page*/
+
 .header1 {
   padding-top: 1%;
   padding-bottom: 3%;
@@ -401,10 +744,11 @@ footer {
   border-bottom: 2px solid #878787;
 }
 
-
 /*--------------------------------fin de page terre d'innovation---------------------------------------------*/
 
+
 /*slide Centre de recherche*/
+
 #slide7 {
   height: 81vh;
   background: url(../img/20160308_145404.jpg) 0 no-repeat fixed;
@@ -412,6 +756,7 @@ footer {
 }
 
 /*mis en page du haut de page*/
+
 .header2 {
   padding-top: 1%;
   padding-bottom: 3%;
