@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "montserrat";
+  src: url('../montserrat/Montserrat-Regular.otf');
+}
+
 /*initialisation de la page */
 
 * {
@@ -10,6 +15,7 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  font-family: 'montserrat';
 }
 
 /*mis en page du haut de page*/
@@ -30,7 +36,9 @@ nav {
   margin-top: 1%;
   position: fixed;
   z-index: 500;
-  font-family: Verdana;
+  font-family: 'montserrat';
+  font-weight: normal;
+  font-style: normal;
 }
 .clic {
   width: 60px;
@@ -93,7 +101,7 @@ nav li:visited {
   text-align: center;
   display: block;
   margin: auto;
-  border-radius: 1px;
+  font-family: 'montserrat';
 }
 
 /*mis en place des formes rond triange*/
@@ -126,8 +134,8 @@ nav li:visited {
   border-top: 4px solid #005CA6;
 }
 
+/*mis en place du 3eme rond*/
 
-  /*mis en place du 3eme rond*/
 .triangletwo {
   position: relative;
   text-align: center;
@@ -141,6 +149,7 @@ nav li:visited {
 }
 
 /*mis en place du 3eme ronds*/
+
 .rondthree {
   cursor: pointer;
   text-align: center;
@@ -162,7 +171,7 @@ nav li:visited {
   text-align: center;
   display: block;
   font-size: 20px;
-  font-family: Verdana;
+  font-family: 'montserrat';
   background-color: #F39200;
   color: white;
   border-bottom: 2px solid white;
@@ -180,7 +189,7 @@ nav li:visited {
 .onclick {
   width: 15%;
   height: 35px;
-  font-family: Verdana;
+  font-family: 'montserrat';
   font-size: 18px;
   float: right;
   background-color: #94C11F;
@@ -207,7 +216,7 @@ main {}
   margin-right: 20%;
   padding-top: 1%;
   padding-bottom: 1%;
-  font-family: Verdana;
+  font-family: 'montserrat';
   font-size: 13px;
   color: #A26303;
   border: 1px solid #F39200;
@@ -235,6 +244,7 @@ section {
   border-bottom: 2px solid #F29100;
   background-color: rgba(148, 193, 31, 0.26);
   box-shadow: 0px 14px 13px #333333;
+  font-family: 'montserrat';
 }
 
 /*mis en page du texte de section*/
@@ -518,17 +528,18 @@ section h1 {
 .Inauguration {
   width: 100%;
   text-align: center;
-  font-family: Verdana;
+font-family: 'montserrat';
   border-top: 2px solid white;
   border-bottom: 2px solid white;
   background-color: black;
-  color: white;
-  box-shadow: 0px -10px 13px #333333;
+  color: white;box-shadow: 0px -10px 13px #333333;
+
 }
 
 /*mis en page de contact*/
 
 footer {
+  font-family: 'montserrat';
   width: 100%;
   height: 50%;
   border-top: 1px solid #E30613;

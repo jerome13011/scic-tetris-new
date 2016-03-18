@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+//interraction du menu en haut a gauche
  $('#navh').hide();
   // shows the slickbox on clicking the noted link
  $('#clic').click(function() {
@@ -12,6 +13,5 @@ $(document).ready(function() {
   return false;
   });
   // toggles the slickbox on clicking the noted link
-
 
  });

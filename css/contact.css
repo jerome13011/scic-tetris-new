@@ -1,5 +1,9 @@
 /*initialisation de la page */
 
+@font-face {
+  font-family: "montserrat";
+  src: url('../montserrat/Montserrat-Regular.otf');
+}
 * {
   box-sizing: border-box;
 }
@@ -10,6 +14,7 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  font-family: 'montserrat';
 }
 
 /*mis en page du haut de page*/
@@ -31,7 +36,7 @@ nav {
   margin-top: 1%;
   position: fixed;
   z-index: 10;
-  font-family: Verdana;
+  font-family: 'montserrat';
 }
 .clic {
   width: 60px;
@@ -91,12 +96,14 @@ a:visited {
   background: url(../img/20160308_144718.jpg) 0 no-repeat fixed;
   background-size: cover;
   background-position: center;
+  font-family: 'montserrat';
 }
 .contact {
   margin-bottom: 3%;
   padding-top: 10%;
   padding-left: 30%;
   padding-right: 30%;
+  font-family: 'montserrat';
 }
 .contactint {
   padding-left: 5%;
@@ -131,4 +138,4 @@ a:visited {
   padding-top: -5%;
   margin-top: 2%;
   margin-bottom: 5%;
-  }
+}

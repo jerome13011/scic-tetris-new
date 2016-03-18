@@ -1,5 +1,9 @@
 /*initialisation de la page */
 
+@font-face {
+  font-family: "montserrat";
+  src: url('../montserrat/Montserrat-Regular.otf');
+}
 * {
   box-sizing: border-box;
 }
@@ -21,6 +25,7 @@ header {
   background-color: white;
   color: #94C11F;
   border-bottom: 2px solid #878787;
+  font-family: 'montserrat';
 }
 
 /*mis en page de la barre de navigation*/
@@ -30,7 +35,7 @@ nav {
   margin-top: 1%;
   position: fixed;
   z-index: 10;
-  font-family: Verdana;
+  font-family: 'montserrat';
 }
 .clic {
   width: 60px;
@@ -90,6 +95,9 @@ a:visited {
 
 /*mis en plage de présentation */
 
+.main {
+  font-family: 'montserrat';
+}
 .presentation1 {
   border-top: 2px solid #175624;
   border-bottom: 2px solid #175624;
@@ -158,87 +166,81 @@ a:visited {
 .description {
   background-color: white;
   padding-top: 1%;
-  box-shadow: 0px -11px 19px #333333;
 }
 .description2 {
   background-color: white;
   padding-top: 1%;
-  box-shadow: 0px -11px 19px #333333;
 }
 .description3 {
   background-color: white;
   padding-top: 1%;
-  box-shadow: 0px -11px 19px #333333;
 }
 .description4 {
   background-color: white;
   padding-top: 1%;
-  box-shadow: 0px -11px 19px #333333;
 }
 .description5 {
   background-color: white;
   padding-top: 1%;
-  box-shadow: 0px -11px 19px #333333;
 }
 .description6 {
   background-color: white;
   padding-top: 1%;
-  box-shadow: 0px -11px 19px #333333;
 }
 
 /*ajout du style au paragraphe du texte descriptif*/
 
 .description p {
-  font-family: Verdana;
+  font-family: 'montserrat';
   font-size: 14px;
   color: #175624;
   margin-left: 25%;
   margin-right: 25%;
 }
 .description2 p {
-  font-family: Verdana;
+  font-family: 'montserrat';
   font-size: 14px;
   color: #F37022;
   margin-left: 25%;
   margin-right: 25%;
 }
 .description3 p {
-  font-family: Verdana;
+  font-family: 'montserrat';
   font-size: 14px;
   color: #639A1A;
   margin-left: 25%;
   margin-right: 25%;
 }
 .description4 p {
-  font-family: Verdana;
+  font-family: 'montserrat';
   font-size: 14px;
   color: #70B220;
   margin-left: 25%;
   margin-right: 25%;
 }
 .description4 ul {
-  font-family: Verdana;
+  font-family: 'montserrat';
   font-size: 14px;
   color: #70B220;
   margin-left: 25%;
   margin-right: 25%;
 }
 .description5 p {
-  font-family: Verdana;
+  font-family: 'montserrat';
   font-size: 14px;
   color: #655546;
   margin-left: 25%;
   margin-right: 25%;
 }
 .description6 p {
-  font-family: Verdana;
+  font-family: 'montserrat';
   font-size: 14px;
   color: black;
   margin-left: 25%;
   margin-right: 25%;
 }
 .description6 ul {
-  font-family: Verdana;
+  font-family: 'montserrat';
   font-size: 14px;
   color: black;
   margin-left: 25%;
@@ -261,7 +263,7 @@ section {
   border-top: 3px solid #94C11F;
   border-bottom: 3px solid #F29100;
   background-color: rgba(148, 193, 31, 0.26);
-  box-shadow: 0px 14px 13px #333333;
+  font-family: 'montserrat';
 }
 
 /*mis en page du texte de section*/
@@ -286,6 +288,7 @@ section h1 {
   color: #E30613;
   background-color: white;
   border-radius: 5px;
+  font-family: 'montserrat';
 }
 .next:hover {
   border: 1px solid white;
@@ -293,8 +296,8 @@ section h1 {
   background-color: #E30613;
 }
 
-
 /*mis en place du bouton previous*/
+
 .previous {
   margin-left: 1%;
   float: left;
@@ -302,8 +305,8 @@ section h1 {
   color: #E30613;
   background-color: white;
   border-radius: 5px;
+  font-family: 'montserrat';
 }
-
 .previous:hover {
   border: 1px solid white;
   color: white;
@@ -316,6 +319,7 @@ footer {
   width: 100%;
   height: 50%;
   border-top: 2px solid #E30613;
+  font-family: 'montserrat';
 }
 
 /*mis en page du cadre de contact*/
@@ -473,93 +477,86 @@ footer {
 .description7 {
   background-color: white;
   padding-top: 1%;
-  box-shadow: 0px -11px 19px #333333;
 }
 .description8 {
   background-color: white;
   padding-top: 1%;
-  box-shadow: 0px -11px 19px #333333;
 }
 .description9 {
   background-color: white;
   padding-top: 1%;
-  box-shadow: 0px -11px 19px #333333;
 }
 .description10 {
   background-color: white;
   padding-top: 1%;
-  box-shadow: 0px -11px 19px #333333;
 }
 .description11 {
   background-color: white;
   padding-top: 1%;
-  box-shadow: 0px -11px 19px #333333;
 }
 .description12 {
   background-color: white;
   padding-top: 1%;
-  box-shadow: 0px -11px 19px #333333;
 }
 
 /*ajout du style au paragraphe du texte descriptif*/
 
 .description7 p {
-  font-family: Verdana;
+  font-family: 'montserrat';
   font-size: 14px;
   color: #175624;
   margin-left: 25%;
   margin-right: 25%;
 }
 .description7 ul {
-  font-family: Verdana;
+  font-family: 'montserrat';
   font-size: 14px;
   color: #175624;
   margin-left: 25%;
   margin-right: 25%;
 }
 .description8 p {
-  font-family: Verdana;
+  font-family: 'montserrat';
   font-size: 14px;
   color: #F37022;
   margin-left: 25%;
   margin-right: 25%;
 }
 .description9 p {
-  font-family: Verdana;
+  font-family: 'montserrat';
   font-size: 14px;
   color: #639A1A;
   margin-left: 25%;
   margin-right: 25%;
 }
 .description10 p {
-  font-family: Verdana;
+  font-family: 'montserrat';
   font-size: 14px;
   color: #4C4B4E;
   margin-left: 25%;
   margin-right: 25%;
 }
 .description10 ul {
-  font-family: Verdana;
+  font-family: 'montserrat';
   font-size: 14px;
   color: #70B220;
   margin-left: 25%;
   margin-right: 25%;
 }
 .description11 p {
-  font-family: Verdana;
+  font-family: 'montserrat';
   font-size: 14px;
   color: #655546;
   margin-left: 25%;
   margin-right: 25%;
 }
 .description12 p {
-  font-family: Verdana;
+  font-family: 'montserrat';
   font-size: 14px;
   color: black;
   margin-left: 25%;
   margin-right: 25%;
 }
-
 #slide8 {
   height: 50vh;
   background: url(../img/20160309_142150.jpg) center 0 no-repeat fixed;
@@ -570,8 +567,8 @@ footer {
   background: url(../img/20160308_144812.jpg) center 0 no-repeat fixed;
   background-size: cover;
 }
-/*--------------------------------fin de page developpement des mobilités ---------------------------------------------*/
 
+/*--------------------------------fin de page developpement des mobilités ---------------------------------------------*/
 
 
 /*mis en plage de présentation */
@@ -609,6 +606,7 @@ footer {
   margin-bottom: 2%;
 }
 .appeze {
+  font-family: 'montserrat';
   text-align: center;
   margin: 0 auto;
   display: block;
@@ -620,107 +618,242 @@ footer {
 .description13 {
   background-color: white;
   padding-top: 1%;
-  box-shadow: 0px -11px 19px #333333;
 }
 .description14 {
   background-color: white;
   padding-top: 1%;
-  box-shadow: 0px -11px 19px #333333;
 }
 .description15 {
   background-color: white;
   padding-top: 1%;
-  box-shadow: 0px -11px 19px #333333;
 }
 .description16 {
   background-color: white;
   padding-top: 1%;
-  box-shadow: 0px -11px 19px #333333;
 }
 .description17 {
   background-color: white;
   padding-top: 1%;
-  box-shadow: 0px -11px 19px #333333;
 }
 .description18 {
   background-color: white;
   padding-top: 1%;
-  box-shadow: 0px -11px 19px #333333;
 }
 
 /*ajout du style au paragraphe du texte descriptif*/
 
 .description13 p {
-  font-family: Verdana;
+  font-family: 'montserrat';
   font-size: 14px;
   color: #175624;
   margin-left: 25%;
   margin-right: 25%;
 }
 .description13 ul {
-  font-family: Verdana;
+  font-family: 'montserrat';
   font-size: 14px;
   color: #175624;
   margin-left: 25%;
   margin-right: 25%;
 }
 .description14 p {
-  font-family: Verdana;
+  font-family: 'montserrat';
   font-size: 14px;
   color: #F37022;
   margin-left: 25%;
   margin-right: 25%;
 }
 .description15 p {
-  font-family: Verdana;
+  font-family: 'montserrat';
   font-size: 14px;
   color: black;
   margin-left: 25%;
   margin-right: 25%;
 }
 .description16 p {
-  font-family: Verdana;
+  font-family: 'montserrat';
   font-size: 14px;
   color: #4C4B4E;
   margin-left: 25%;
   margin-right: 25%;
 }
 .description16 ul {
-  font-family: Verdana;
+  font-family: 'montserrat';
   font-size: 14px;
   color: #70B220;
   margin-left: 25%;
   margin-right: 25%;
 }
 .description17 p {
-  font-family: Verdana;
+  font-family: 'montserrat';
   font-size: 14px;
   color: #655546;
   margin-left: 25%;
   margin-right: 25%;
 }
 .description17 p {
-  font-family: Verdana;
+  font-family: 'montserrat';
   font-size: 14px;
   color: #B8860B;
   margin-left: 25%;
   margin-right: 25%;
 }
 .description17 ul {
-  font-family: Verdana;
+  font-family: 'montserrat';
   font-size: 14px;
   color: #B8860B;
   margin-left: 25%;
   margin-right: 25%;
 }
 .description17 h1 {
+  font-family: 'montserrat';
   text-align: center;
   margin-bottom: 2%;
   font-size: 45px;
   color: #B8860B;
 }
+
 /*--------------------------------fin de page produire et échanger autrement---------------------------------------------*/
 
+
+/*mis en plage de présentation */
+
+.presentation18 {
+  border-top: 2px solid #175624;
+  border-bottom: 2px solid #175624;
+}
+.presentation19 {
+  border-top: 2px solid #53AF32;
+  border-bottom: 2px solid #53AF32;
+}
+.presentation20 {
+  border-top: 2px solid #163C63;
+  border-bottom: 2px solid #163C63;
+}
+.presentation21 {
+  border-top: 2px solid #4C4B4E;
+  border-bottom: 2px solid #4C4B4E;
+}
+.presentation22 {
+  border-top: 2px solid #FD8412;
+  border-bottom: 2px solid #FD8412;
+}
+.presentation23 {
+  border-top: 2px solid #FD8412;
+}
+
+/*mis en place du logo*/
+
+.eric21 {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 2%;
+}
+.fablab {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 2%;
+}
+
+/*ajout du style au texte descriptif*/
+
+.description18 {
+  background-color: white;
+  padding-top: 1%;
+}
+.description19 {
+  background-color: white;
+  padding-top: 1%;
+}
+.description20 {
+  background-color: white;
+  padding-top: 1%;
+}
+.description21 {
+  background-color: white;
+  padding-top: 1%;
+}
+.description22 {
+  background-color: white;
+  padding-top: 1%;
+}
+.description23 {
+  background-color: white;
+  padding-top: 1%;
+}
+
+/*ajout du style au paragraphe du texte descriptif*/
+
+.description18 p {
+  font-family: 'montserrat';
+  font-size: 14px;
+  color: #175624;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.description18 ul {
+  font-family: 'montserrat';
+  font-size: 14px;
+  color: #175624;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.description19 p {
+  font-family: 'montserrat';
+  font-size: 14px;
+  color: #53AF32;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.description19 ul {
+  font-family: 'montserrat';
+  font-size: 14px;
+  color: #53AF32;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.description20 p {
+  font-family: 'montserrat';
+  font-size: 14px;
+  color: #163C63;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.description21 p {
+  font-family: 'montserrat';
+  font-size: 14px;
+  color: #4C4B4E;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.description21 ul {
+  font-family: 'montserrat';
+  font-size: 14px;
+  color: #70B220;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.description22 p {
+  font-family: 'montserrat';
+  font-size: 14px;
+  color: #655546;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.description23 p {
+  font-family: 'montserrat';
+  font-size: 14px;
+  color: black;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+#slide10 {
+  height: 50vh;
+  background: url(../img/20160309_143554.jpg) center 0 no-repeat fixed;
+  background-size: cover;
+}
 
 /*--------------------------------fin de page developpement d'une économie sociale du numérique---------------------------------------------*/
 
@@ -742,10 +875,62 @@ footer {
   background-color: white;
   color: #94C11F;
   border-bottom: 2px solid #878787;
+  font-family: 'montserrat';
 }
 
 /*--------------------------------fin de page terre d'innovation---------------------------------------------*/
 
+
+/*mis en place du formulaire*/
+
+.main3 {
+  border-top: 2px solid black;
+}
+center {
+  display: block;
+  text-align: center;
+  margin: auto;
+  padding-top: 2%;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: 'montserrat';
+  color: #878787;
+}
+.formf {
+  padding-top: 10%;
+}
+.nomf {
+  margin-left: 1.8%;
+  margin-bottom: 1%;
+}
+.prenomf {}
+.questionf {
+  margin-top: 1%;
+  width: 30%;
+}
+.messagef {
+  width: 30%;
+}
+.envoyerf {
+  background-color: white;
+  border: 1px solid #878787;
+  border-radius: 3px;
+}
+.envoyerf:hover {
+  background-color: #878787;
+  border: 1px solid black;
+  color: white;
+}
+.effacerf {
+  background-color: white;
+  border: 1px solid #878787;
+  border-radius: 3px;
+}
+.effacerf:hover {
+  background-color: #878787;
+  border: 1px solid black;
+  color: white;
+}
 
 /*slide Centre de recherche*/
 
@@ -764,6 +949,7 @@ footer {
   background-color: white;
   color: #94C11F;
   border-bottom: 2px solid #878787;
+  font-family: 'montserrat';
 }
 
 /*--------------------------------fin de page Centre de recherche---------------------------------------------*/
