@@ -32,6 +32,7 @@ header {
 /*mis en page de la barre de navigation*/
 
 nav {
+  height: 160px;
   margin-left: 1%;
   margin-top: 1%;
   position: fixed;
@@ -39,6 +40,7 @@ nav {
   font-family: 'montserrat';
   font-weight: normal;
   font-style: normal;
+  min-height: 1500px:
 }
 .clic {
   width: 60px;
@@ -83,14 +85,74 @@ nav li {
   color: black;
   cursor: pointer;
   font-size: small;
-  margin-top: 10%;
+  margin-top: 8%;
   border-bottom: 2px solid black;
 }
+
 nav li:hover {
   color: white;
 }
 nav li:visited {
   color: #800000;
+}
+/*Nav 4axes*/
+
+.dropdown {
+  font-family: 'montserrat';
+  font-weight: normal;
+  font-style: normal;
+}
+.dropdown a:visited {
+  color: black;
+}
+.dropdown a:hover {
+  color: white;
+}
+
+.dropbtn {
+  background-color: rgb(29, 112, 184);
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 5px;
+}
+.dropdown-content a:hover {
+  background-color: black;
+  color: white;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: rgb(29, 112, 184);
+  color: white;
+}
+/*reduit la bar de nav si ecran de telephone portable*/
+@media screen and (max-width: 750px) {
+  nav {
+    width: 80%;
+  }
+}
+
+/*annule le le scrool sur 4axes si plus petit que 768px*/
+@media screen and (max-width: 768px) {
+  .dropdown-content a {
+    display: none;
+  }
 }
 
 /*mis en place du bloc projet de territoire*/
@@ -200,6 +262,20 @@ nav li:visited {
   border-radius: 5px;
   box-shadow: 0px 7px 25px #333333;
 }
+/*agrandis le bloc contact sur petit ecrant*/
+@media screen and (max-width: 750px) {
+  .onclick {
+    width: 80%;
+    margin-top: 2%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .onclick {
+    width: 80%;
+    margin-top: 2%;
+  }
+}
+
 .onclick:hover {
   background-color: white;
   color: #94C11F;
@@ -482,7 +558,15 @@ section h1 {
   border-radius: 3px;
   box-shadow: 5px -5px 12px #333333;
 }
-
+/*agrandis le bloc contact sur petit ecrant*/
+@media screen and (max-width: 750px) {
+  .bloca {
+    width: 80%;
+  }
+  .blocb {
+    width: 80%;
+  }
+}
 /*titre des blocs*/
 
 .bloca h3 {
@@ -608,4 +692,11 @@ footer {
 .contact {
   width: 50%;
   height: 50%;
+}
+
+/*agrandis le bloc contact sur petit ecrant*/
+@media screen and (max-width: 750px) {
+  .contact1 {
+    width: 60%;
+  }
 }

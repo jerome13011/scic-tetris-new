@@ -14,9 +14,10 @@
 }
 #slide2 {
   height: 100vh;
-  background: url(../img/20160308_145404.jpg) center 0 no-repeat fixed;
+  background: url(../img/installation_HAUR.jpg) center 0 no-repeat fixed;
   background-size: cover;
   border-bottom: 2px solid #E30613;
+  background-position: 0 -113px;
 }
 #slide3 {
   height: 100vh;
