@@ -754,5 +754,7 @@ footer {
   .contact1 {
     width: 60%;
     }
-    
+    .logomini {
+    display: none;
+    }
 }
