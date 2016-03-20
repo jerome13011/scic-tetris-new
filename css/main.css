@@ -752,15 +752,11 @@ footer {
 
 @media screen and (max-width: 750px) {
   .contact1 {
-    margin-top: -40%;
     width: 60%;
   }
 }
 @media screen and (max-width: 750px) {
-  .apese2  {
-  font-size:0px;
-  }
-.logomini {
-  width: 0px;
+  .apese2 {
+    font-size: 0px;
   }
 }
