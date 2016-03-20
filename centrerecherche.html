@@ -67,11 +67,12 @@
   <!--  ajout du bloc main-->
   <div class="main3">
     <center>
+      <!-- http://formspree.io/c_snip13@hotmail.com -->
       <form class="formf" action="http://formspree.io/c_snip13@hotmail.com" name="formf" method=POST enctype="text/plain">
-        <input class="nomf" type="text" name="nomf" placeholder="Nom">
-        <input class="prenomf" type="text" name="prenomf" placeholder="Prénom">
+        <input class="nomf" type="text" name="_replyto" placeholder="Nom">
+        <input class="prenomf" type="text" name="_replyto" placeholder="Prénom">
         <div class="blocf">
-          <SELECT class="questionf" name="questionf" size="1">
+          <SELECT class="questionf" name="_replyto" size="1">
             <OPTION>Demande d'information expertise
               <OPTION>Demande d'information sur l'innovation sociale
                 <OPTION>Réunion publique
@@ -79,10 +80,10 @@
           </SELECT>
         </div>
         </table>
-        <textarea class="messagef" name="message" cols="30" rows="5"></textarea>
+        <textarea class="messagef" name="_replyto" cols="30" rows="5"></textarea>
 
         <br>
-        <input class="envoyerf" type="submit" value="Envoyer" name="Envoyer">
+        <input class="envoyerf" type="submit" value="Envoyer" name="Send">
         <input class="effacerf" type="reset" name="Submit" value="Effacer">
         <hr>
       </form>
