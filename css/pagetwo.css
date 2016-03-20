@@ -40,7 +40,6 @@ nav {
   font-weight: normal;
   font-style: normal;
 }
-
 .clic {
   width: 60px;
   height: 50px;
@@ -61,7 +60,6 @@ nav {
     background-color: rgba(29, 112, 184, 0.6);
   }
 }
-
 .X {
   cursor: pointer;
   text-align: center;
@@ -93,13 +91,13 @@ nav li {
   margin-top: 8%;
   border-bottom: 2px solid black;
 }
-
 nav li:hover {
   color: white;
 }
 nav li:visited {
   color: #800000;
 }
+
 /*Nav 4axes*/
 
 .dropdown {
@@ -113,7 +111,6 @@ nav li:visited {
 .dropdown a:hover {
   color: white;
 }
-
 .dropbtn {
   background-color: rgb(29, 112, 184);
   color: black;
@@ -146,7 +143,9 @@ nav li:visited {
   background-color: rgb(29, 112, 184);
   color: white;
 }
+
 /*reduit la bar de nav si ecran de telephone portable*/
+
 @media screen and (max-width: 750px) {
   nav {
     width: 80%;
@@ -154,6 +153,7 @@ nav li:visited {
 }
 
 /*annule le le scrool sur 4axes si plus petit que 768px*/
+
 @media screen and (max-width: 768px) {
   .dropdown-content a {
     display: none;
@@ -379,10 +379,9 @@ section h1 {
   color: white;
   background-color: #E30613;
 }
-
 @media screen and (max-width: 750px) {
   .next {
-float: left;
+    float: left;
     font-size: 10px;
     width: 40%;
   }
@@ -391,7 +390,6 @@ float: left;
     width: 40%;
   }
 }
-
 
 /*mis en page de contact*/
 
@@ -455,6 +453,7 @@ footer {
   border: 1px solid #878787;
   color: black;
 }
+
 /*Copyright*/
 
 .Copyright {
@@ -1064,6 +1063,26 @@ center {
   background-color: white;
   border: 1px solid black;
   color: black;
+}
+
+/*agrandis le bouton envoyer et effacer sur petit ecrant*/
+
+@media screen and (max-width: 750px) {
+  .envoyerf {
+    width: 25%;
+  }
+  .effacerf {
+    width: 25%;
+  }
+  .effacerf {
+    width: 25%;
+  }
+  .nomf {
+    font-size: 14px;
+  }
+  .prenomf {
+    font-size: 14px;
+  }
 }
 
 /*slide Centre de recherche*/
