@@ -11,6 +11,6 @@ $message .= "$key : $val\n";
 
 mail($TO, $subject, $message, $h);
 
-Header("Location: centrerecherche.html");
+Header("Location: index.html");
 
 ?>
