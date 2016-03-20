@@ -69,8 +69,9 @@
     <center>
       <!-- http://formspree.io/c_snip13@hotmail.com -->
       <form class="formf" action="form.php" name="formf" method=POST enctype="text/plain">
-        <input class="nomf" type="text" name="_replyto" placeholder="Nom">
+        <input class="nomf" type="text" name="nomf" placeholder="Nom">
         <input class="prenomf" type="text" name="prenomf" placeholder="Prénom">
+        <input type="email" name="_replyto">
         <div class="blocf">
           <SELECT class="questionf" name="questionf" size="1">
             <OPTION>Demande d'information expertise
@@ -88,11 +89,11 @@
         <hr>
       </form>
     </center>
-    <form  action= "http://formspree.io/c_snip13@hotmail.com" method=POST>
-  <input  type= "email"  name= "_replyto" >
-  <textarea  name= "body" ></textarea>
-  <input  type= "submit"  value= "Send" >
-</form>
+    <form action="http://formspree.io/c_snip13@hotmail.com" method=POST>
+      <input type="email" name="_replyto">
+      <textarea name="body"></textarea>
+      <input type="submit" value="Send">
+    </form>
 
     <!-- Ajout de Copyright et faire un don -->
     <div class="row">
