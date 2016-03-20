@@ -753,10 +753,6 @@ footer {
 @media screen and (max-width: 750px) {
   .contact1 {
     width: 60%;
-  }
-}
-@media screen and (max-width: 750px) {
-  .apese2 {
-    font-size: 0px;
-  }
+    }
+    
 }
