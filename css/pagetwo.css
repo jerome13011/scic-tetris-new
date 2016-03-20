@@ -39,8 +39,8 @@ nav {
   font-family: 'montserrat';
   font-weight: normal;
   font-style: normal;
-  min-height: 1500px:
 }
+
 .clic {
   width: 60px;
   height: 50px;
@@ -56,6 +56,12 @@ nav {
   margin-top: 5%;
   border: 2px solid black;
 }
+@media screen and (max-width: 768px) {
+  .clic {
+    background-color: rgba(29, 112, 184, 0.6);
+  }
+}
+
 .X {
   cursor: pointer;
   text-align: center;
@@ -374,6 +380,19 @@ section h1 {
   background-color: #E30613;
 }
 
+@media screen and (max-width: 750px) {
+  .next {
+float: left;
+    font-size: 10px;
+    width: 40%;
+  }
+  .previous {
+    font-size: 10px;
+    width: 40%;
+  }
+}
+
+
 /*mis en page de contact*/
 
 footer {
@@ -435,6 +454,31 @@ footer {
   background-color: white;
   border: 1px solid #878787;
   color: black;
+}
+/*Copyright*/
+
+.Copyright {
+  float: right;
+  margin-right: 2%;
+}
+
+/*Faire un don*/
+
+.don {
+  margin-left: 2%;
+}
+.bdon {
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+}
+
+/*agrandis le bloc contact sur petit ecrant*/
+
+@media screen and (max-width: 750px) {
+  .contact1 {
+    width: 60%;
+  }
 }
 
 /*effet parallax*/

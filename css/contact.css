@@ -204,3 +204,36 @@ nav li:visited {
   margin-top: 2%;
   margin-bottom: 5%;
 }
+
+/*Copyright*/
+
+.Copyright {
+  float: right;
+  margin-right: 2%;
+}
+
+/*Faire un don*/
+
+.don {
+  margin-left: 2%;
+}
+.bdon {
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+}
+
+/*agrandis le bloc contact sur petit ecrant*/
+@media screen and (max-width: 750px) {
+  .contact {
+    width: 120%;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .contact1 {
+    width: 60%;
+  }
+}
