@@ -105,7 +105,7 @@ nav li:visited {
 .dropdown a:visited {
   color: black;
 }
-.dropdown a:hover {
+.dropdown:hover {
   color: white;
 }
 .dropbtn {
