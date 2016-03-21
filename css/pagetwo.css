@@ -1,5 +1,6 @@
 /*initialisation de la page */
 
+/*-----------debut de Gestion des ressources et des déchets ---------------------*/
 @font-face {
   font-family: "montserrat";
   src: url('../montserrat/Montserrat-Regular.otf');
@@ -522,6 +523,7 @@ footer {
 
 /*--------------------------------fin de page gestion et ressource des dechets---------------------------------------------*/
 
+/*---------------------------------Debut de Développement des mobilités------------------------------------------------*/
 
 /*mis en plage de présentation */
 
@@ -674,6 +676,7 @@ footer {
 
 /*--------------------------------fin de page developpement des mobilités ---------------------------------------------*/
 
+/*---------------------------------Debut de Produire et échanger autrement--------------------------------------------------*/
 
 /*mis en plage de présentation */
 
@@ -819,6 +822,7 @@ footer {
 
 /*--------------------------------fin de page produire et échanger autrement---------------------------------------------*/
 
+/*--------------------------------Debut de Développement d'une économie sociale du numérique-------------------------------*/
 
 /*mis en plage de présentation */
 
@@ -953,6 +957,8 @@ footer {
   margin-left: 25%;
   margin-right: 25%;
 }
+
+/*slide*/
 #slide10 {
   height: 50vh;
   background: url(../img/20160309_143554.jpg) center 0 no-repeat fixed;
@@ -961,6 +967,7 @@ footer {
 
 /*--------------------------------fin de page developpement d'une économie sociale du numérique---------------------------------------------*/
 
+/*---------------------------------Debut de terre d'innovation-------------------------------------------------------------------------------*/
 
 /*slide terre d'innovation*/
 
@@ -984,12 +991,13 @@ footer {
 
 /*--------------------------------fin de page terre d'innovation---------------------------------------------*/
 
+/*---------------------------------Debut de Centre de recherche-----------------------------------------------*/
 
 /*mis en place du formulaire*/
 
 .main3 {
   border-top: 2px solid black;
-  background-color: #3DADD5;
+  background-color: #1D70B8;
 }
 center {
   display: block;
