@@ -1115,3 +1115,11 @@ center {
 }
 
 /*--------------------------------fin de page Centre de recherche---------------------------------------------*/
+
+/*----------------------------------Debut de galerie photo------------------------------------------------------*/
+
+#myCarousel {
+  margin-bottom: 2%;
+  border: 4px solid #C2C2C2;
+  border-radius: 5px;
+}
