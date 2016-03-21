@@ -105,7 +105,7 @@ nav li:visited {
 .dropdown a:visited {
   color: black;
 }
-.dropdown:hover {
+.dropdown a:hover {
   color: white;
 }
 .dropbtn {
@@ -140,6 +140,8 @@ nav li:visited {
   background-color: rgb(29, 112, 184);
   color: white;
 }
+
+
 
 /*reduit la bar de nav si ecran de telephone portable*/
 
