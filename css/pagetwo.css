@@ -184,7 +184,7 @@ nav li:visited {
 }
 .presentation5 {
   border-top: 2px solid #FD8412;
-  border-bottom: 2px solid #FD8412;
+
 }
 .presentation6 {
   border-top: 2px solid #FD8412;
@@ -698,7 +698,7 @@ footer {
 }
 .presentation17 {
   border-top: 2px solid #FD8412;
-  border-bottom: 2px solid #FD8412;
+
 }
 .presentation18 {
   border-top: 2px solid #FD8412;
@@ -836,7 +836,7 @@ footer {
 }
 .presentation20 {
   border-top: 2px solid #163C63;
-  border-bottom: 2px solid #163C63;
+  
 }
 .presentation21 {
   border-top: 2px solid #4C4B4E;
@@ -1144,25 +1144,59 @@ center {
 
 /*---------------------------------Fin de page Bénévolas-----------------------------------------------------------*/
 
-/*----------------------------------Debut de page ptce------------------------------------------------------------*/
+/*----------------------------------Debut de page PTCE------------------------------------------------------------*/
 /*slide*/
-#slide11 {
-  height: 50vh;
-  background: url(../img/20160308_144523.jpg) 0 no-repeat fixed;
+#slide12 {
+  height: 80vh;
+  background: url(../img/Descrip2.png) 0 no-repeat fixed;
   background-size: cover;
 }
 
+/*Mis en page du texte*/
 .main5 {
-  border-top: 2px solid #E30613; 
+  border-top: 2px solid #878787;
+  color: #878787;
+
 
 }
+
+/*Mis en page des paragraphes*/
 .main5 p {
   font-family: 'montserrat';
   font-size: 14px;
-  color: #E30613;
   margin-top: 2%;
   margin-bottom: 2%;
   margin-left: 25%;
   margin-right: 25%;
 }
+.main5 li {
+  font-family: 'montserrat';
+  font-size: 14px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+/*Mis en place des couleurs*/
+.ptce1 {
+  color: #F39200;
+}
+.pole {
+color: #94C11F;
+}
+.territoriaux {
+  color: #1D70B8;
+}
+.cooperation {
+color: #E30613;
+}
+.economique {
+  color: #F39200
+}
 /*-------------------------------------Fin de ptce-------------------------------------------------------------------*/
+
+/*debut de centre de recherche v2*/
+.center2 {
+  height: 80vh;
+}
