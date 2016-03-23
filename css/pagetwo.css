@@ -1,6 +1,8 @@
 /*initialisation de la page */
 
+
 /*-----------debut de Gestion des ressources et des déchets ---------------------*/
+
 @font-face {
   font-family: "montserrat";
   src: url('../montserrat/Montserrat-Regular.otf');
@@ -24,9 +26,12 @@ header {
   padding-bottom: 3%;
   text-align: center;
   background-color: white;
-  color: #94C11F;
+  color: #878787;
   border-bottom: 2px solid #878787;
   font-family: 'montserrat';
+}
+header h1 {
+  text-shadow: 0px 0px 9px #333333;
 }
 
 /*mis en page de la barre de navigation*/
@@ -184,7 +189,6 @@ nav li:visited {
 }
 .presentation5 {
   border-top: 2px solid #FD8412;
-
 }
 .presentation6 {
   border-top: 2px solid #FD8412;
@@ -523,7 +527,9 @@ footer {
 
 /*--------------------------------fin de page gestion et ressource des dechets---------------------------------------------*/
 
+
 /*---------------------------------Debut de Développement des mobilités------------------------------------------------*/
+
 
 /*mis en plage de présentation */
 
@@ -676,7 +682,9 @@ footer {
 
 /*--------------------------------fin de page developpement des mobilités ---------------------------------------------*/
 
+
 /*---------------------------------Debut de Produire et échanger autrement--------------------------------------------------*/
+
 
 /*mis en plage de présentation */
 
@@ -698,7 +706,6 @@ footer {
 }
 .presentation17 {
   border-top: 2px solid #FD8412;
-
 }
 .presentation18 {
   border-top: 2px solid #FD8412;
@@ -822,7 +829,9 @@ footer {
 
 /*--------------------------------fin de page produire et échanger autrement---------------------------------------------*/
 
+
 /*--------------------------------Debut de Développement d'une économie sociale du numérique-------------------------------*/
+
 
 /*mis en plage de présentation */
 
@@ -836,7 +845,6 @@ footer {
 }
 .presentation20 {
   border-top: 2px solid #163C63;
-  
 }
 .presentation21 {
   border-top: 2px solid #4C4B4E;
@@ -959,6 +967,7 @@ footer {
 }
 
 /*slide*/
+
 #slide10 {
   height: 50vh;
   background: url(../img/20160309_143554.jpg) center 0 no-repeat fixed;
@@ -967,7 +976,9 @@ footer {
 
 /*--------------------------------fin de page developpement d'une économie sociale du numérique---------------------------------------------*/
 
+
 /*---------------------------------Debut de terre d'innovation-------------------------------------------------------------------------------*/
+
 
 /*slide terre d'innovation*/
 
@@ -991,8 +1002,58 @@ footer {
 
 /*--------------------------------fin de page terre d'innovation---------------------------------------------*/
 
+
 /*---------------------------------Debut de Centre de recherche-----------------------------------------------*/
 
+.pdescriptioncentre {
+  border-top: 2px solid black;
+  font-family: 'montserrat';
+}
+/*Mis en place du texte centre de recherche*/
+
+.descriptioncentre {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-family: 'montserrat';
+}
+.descriptioncentre h3 {
+  text-align: center;
+  margin-bottom: 2%;
+  color: #1E74BF;
+}
+.descriptioncentre p {
+  font-family: 'montserrat';
+  font-size: 14px;
+  color: #878787;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.descriptioncentre li {
+  font-family: 'montserrat';
+  font-size: 14px;
+  color: #878787;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+/*mis en place des couleur*/
+.questionnement {
+  color: #94C120;
+}
+.theme {
+  color: #E30613;
+}
+.interface {
+  color: #F29100;
+}
+.moyens {
+  color: #1E74BF;
+}
+.lienb {
+  text-align: center;
+  margin: auto;
+  display: block;
+}
 /*mis en place du formulaire*/
 
 .main3 {
@@ -1116,6 +1177,7 @@ center {
 
 /*--------------------------------fin de page Centre de recherche---------------------------------------------*/
 
+
 /*----------------------------------Debut de galerie photo------------------------------------------------------*/
 
 #myCarousel {
@@ -1126,8 +1188,12 @@ center {
 
 /*----------------------------------Fin de galarie photo-----------------------------------------------------------*/
 
+
 /*-------------------------------- Debut de page Bénévolas----------------------------------------------------------*/
+
+
 /*slide*/
+
 #slide11 {
   height: 50vh;
   background: url(../img/20160308_144523.jpg) 0 no-repeat fixed;
@@ -1135,6 +1201,7 @@ center {
 }
 
 /*mis en page du nuage bénévolas*/
+
 .nuage {
   margin-top: 3%;
   margin-left: 35%;
@@ -1144,8 +1211,12 @@ center {
 
 /*---------------------------------Fin de page Bénévolas-----------------------------------------------------------*/
 
+
 /*----------------------------------Debut de page PTCE------------------------------------------------------------*/
+
+
 /*slide*/
+
 #slide12 {
   height: 80vh;
   background: url(../img/Descrip2.png) 0 no-repeat fixed;
@@ -1153,14 +1224,14 @@ center {
 }
 
 /*Mis en page du texte*/
+
 .main5 {
   border-top: 2px solid #878787;
   color: #878787;
-
-
 }
 
 /*Mis en page des paragraphes*/
+
 .main5 p {
   font-family: 'montserrat';
   font-size: 14px;
@@ -1179,24 +1250,28 @@ center {
 }
 
 /*Mis en place des couleurs*/
+
 .ptce1 {
   color: #F39200;
 }
 .pole {
-color: #94C11F;
+  color: #94C11F;
 }
 .territoriaux {
   color: #1D70B8;
 }
 .cooperation {
-color: #E30613;
+  color: #E30613;
 }
 .economique {
   color: #F39200
 }
+
 /*-------------------------------------Fin de ptce-------------------------------------------------------------------*/
 
+
 /*debut de centre de recherche v2*/
+
 .center2 {
   height: 80vh;
 }

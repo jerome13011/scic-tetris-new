@@ -28,7 +28,9 @@ header {
   border-bottom: 3px solid #878787;
   z-index: 100;
 }
-
+header h1 {
+  text-shadow: 0px 0px 9px #333333;
+}
 /*mis en page de la barre de navigation*/
 
 nav {
