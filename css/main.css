@@ -97,18 +97,18 @@ nav li:visited {
 
 /*Nav 4axes*/
 
-.dropdown {
+.mondropdown {
   font-family: 'montserrat';
   font-weight: normal;
   font-style: normal;
+  color: black
 }
-.dropdown a:hover {
+.mondropdown a:visited {
+  color: black;
+}
+.mondropdown a:hover {
   color: white;
 }
-.dropdown a:visited {
-  color: #800000;
-}
-
 .dropbtn {
   background-color: rgb(29, 112, 184);
   color: black;
@@ -116,6 +116,7 @@ nav li:visited {
   cursor: pointer;
 }
 .dropdown-content {
+  font-family: 'montserrat';
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -134,15 +135,13 @@ nav li:visited {
   background-color: black;
   color: white;
 }
-.dropdown:hover .dropdown-content {
+.mondropdown:hover .dropdown-content {
   display: block;
 }
-.dropdown:hover .dropbtn {
+.mondropdown:hover .dropbtn {
   background-color: rgb(29, 112, 184);
   color: white;
 }
-
-
 
 /*reduit la bar de nav si ecran de telephone portable*/
 
@@ -756,20 +755,21 @@ footer {
 @media screen and (max-width: 750px) {
   .contact1 {
     width: 60%;
-    }
-    .logomini {
+  }
+  .logomini {
     display: none;
-    }
+  }
 }
 
 /*slide sur la plage index*/
+
 #slide0 {
   height: 81vh;
   background: url(../img/20160308_144718.jpg) 0 no-repeat fixed;
   background-size: cover;
   z-index: 100;
   border-bottom: 2px solid #878787;
-  }
+}
 #slide1 {
   height: 100%;
   background: url(../img/20160308_145117.jpg) 0 no-repeat fixed;
@@ -796,16 +796,19 @@ footer {
   border-top: 2px solid #1D71BA;
 }
 #video {
-position: relative;
-padding-bottom: 56.25%; /* 16:9 */
-padding-top: 25px;
-height: 0;
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
 }
+
 /* L'enfant */
+
 #video iframe {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
