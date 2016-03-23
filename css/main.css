@@ -102,12 +102,13 @@ nav li:visited {
   font-weight: normal;
   font-style: normal;
 }
-.dropdown a:visited {
-  color: black;
-}
 .dropdown a:hover {
   color: white;
 }
+.dropdown a:visited {
+  color: black;
+}
+
 .dropbtn {
   background-color: rgb(29, 112, 184);
   color: black;
