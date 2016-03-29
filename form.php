@@ -1,5 +1,5 @@
 <?php
-$TO = "fanniojerome@free.fr";
+$TO = "c_snip13@hotmail.com";
 
 $h = "From: " . $TO;
 

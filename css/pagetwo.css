@@ -1,1277 +1,1383 @@
-/*initialisation de la page */
-
-
-/*-----------debut de Gestion des ressources et des déchets ---------------------*/
-
-@font-face {
-  font-family: "montserrat";
-  src: url('../montserrat/Montserrat-Regular.otf');
-}
-* {
-  box-sizing: border-box;
-}
-html, body {
-  width: 100%;
-}
-body {
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-/*mis en page du haut de page*/
-
-header {
-  padding-top: 1%;
-  padding-bottom: 3%;
-  text-align: center;
-  background-color: white;
-  color: #878787;
-  border-bottom: 2px solid #878787;
-  font-family: 'montserrat';
-}
-header h1 {
-  text-shadow: 0px 0px 9px #333333;
-}
-
-/*mis en page de la barre de navigation*/
-
-nav {
-  height: 160px;
-  margin-left: 1%;
-  margin-top: 1%;
-  position: fixed;
-  z-index: 500;
-  font-family: 'montserrat';
-  font-weight: normal;
-  font-style: normal;
-}
-.clic {
-  width: 60px;
-  height: 50px;
-  background-color: rgb(29, 112, 184);
-  border: 2px solid black;
-}
-.clic:hover {
-  color: white;
-  border: 2px solid white;
-}
-.navh {
-  background-color: rgb(29, 112, 184);
-  margin-top: 5%;
-  border: 2px solid black;
-}
-@media screen and (max-width: 768px) {
-  .clic {
-    background-color: rgba(29, 112, 184, 0.6);
-  }
-}
-.X {
-  cursor: pointer;
-  text-align: center;
-  background-color: rgb(29, 112, 184);
-  color: black;
-  width: 10%;
-  float: right;
-  margin-right: 2%;
-  margin-top: 2%;
-  font-size: 30px;
-  border: 2px solid black;
-  font-weight: bold;
-}
-.X:hover {
-  color: white;
-  border: 2px solid white;
-}
-nav ul {
-  list-style: none;
-  margin-right: 2%;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  color: black;
-}
-nav li {
-  color: black;
-  cursor: pointer;
-  font-size: small;
-  margin-top: 8%;
-  border-bottom: 2px solid black;
-}
-nav li:hover {
-  color: white;
-}
-nav li:visited {
-  color: #800000;
-}
-
-/*Nav 4axes*/
-
-.dropdown {
-  font-family: 'montserrat';
-  font-weight: normal;
-  font-style: normal;
-}
-.dropdown a:visited {
-  color: black;
-}
-.dropdown a:hover {
-  color: white;
-}
-.dropbtn {
-  background-color: rgb(29, 112, 184);
-  color: black;
-  border: none;
-  cursor: pointer;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-}
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  border-radius: 5px;
-}
-.dropdown-content a:hover {
-  background-color: black;
-  color: white;
-}
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-.dropdown:hover .dropbtn {
-  background-color: rgb(29, 112, 184);
-  color: white;
-}
-
-/*reduit la bar de nav si ecran de telephone portable*/
-
-@media screen and (max-width: 750px) {
-  nav {
-    width: 80%;
-  }
-}
-
-/*annule le le scrool sur 4axes si plus petit que 768px*/
-
-@media screen and (max-width: 768px) {
-  .dropdown-content a {
-    display: none;
-  }
-}
-
-/*mis en plage de présentation */
-
-.main {
-  font-family: 'montserrat';
-}
-.presentation1 {
-  border-top: 2px solid #175624;
-  border-bottom: 2px solid #175624;
-}
-.presentation2 {
-  border-top: 2px solid #F37022;
-  border-bottom: 2px solid #F37022;
-}
-.presentation3 {
-  border-top: 2px solid #639A1A;
-  border-bottom: 2px solid #639A1A;
-}
-.presentation4 {
-  border-top: 2px solid #70B220;
-  border-bottom: 2px solid #70B220;
-}
-.presentation5 {
-  border-top: 2px solid #FD8412;
-}
-.presentation6 {
-  border-top: 2px solid #FD8412;
-}
-
-/*mis en place du logo*/
-
-.tedee {
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  margin-bottom: 2%;
-}
-.choisir {
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  margin-bottom: 2%;
-}
-.resine {
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  margin-bottom: 2%;
-}
-.evaleco {
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  margin-bottom: 2%;
-}
-.capg {
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  margin-bottom: 2%;
-}
-.sescol {
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  margin-bottom: 2%;
-}
-
-/*ajout du style au texte descriptif*/
-
-.description {
-  background-color: white;
-  padding-top: 1%;
-}
-.description2 {
-  background-color: white;
-  padding-top: 1%;
-}
-.description3 {
-  background-color: white;
-  padding-top: 1%;
-}
-.description4 {
-  background-color: white;
-  padding-top: 1%;
-}
-.description5 {
-  background-color: white;
-  padding-top: 1%;
-}
-.description6 {
-  background-color: white;
-  padding-top: 1%;
-}
-
-/*ajout du style au paragraphe du texte descriptif*/
-
-.description p {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: #175624;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-.description2 p {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: #F37022;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-.description3 p {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: #639A1A;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-.description4 p {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: #70B220;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-.description4 ul {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: #70B220;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-.description5 p {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: #655546;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-.description6 p {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: black;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-.description6 ul {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: black;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-
-/*Ajout du lien de redirection vers le site web*/
-
-.lien1 p {
-  color: #0C3A63;
-  margin-left: 2%;
-}
-.lien1 p:hover {
-  color: black;
-}
-
-/*mis en page des 4 axes*/
-
-section {
-  border-top: 3px solid #94C11F;
-  border-bottom: 3px solid #F29100;
-  background-color: rgba(148, 193, 31, 0.26);
-  font-family: 'montserrat';
-}
-
-/*mis en page du texte de section*/
-
-section h1 {
-  text-align: center;
-  color: #848484;
-}
-
-/*placement et stylage des logo des axes*/
-
-.logoaxe {
-  margin-top: 5%;
-}
-
-/*mis en place du bouton next*/
-
-.next {
-  margin-right: 1%;
-  float: right;
-  border: 1px solid #E30613;
-  color: #E30613;
-  background-color: white;
-  border-radius: 5px;
-  font-family: 'montserrat';
-}
-.next:hover {
-  border: 1px solid white;
-  color: white;
-  background-color: #E30613;
-}
-
-/*mis en place du bouton previous*/
-
-.previous {
-  margin-left: 1%;
-  float: left;
-  border: 1px solid #E30613;
-  color: #E30613;
-  background-color: white;
-  border-radius: 5px;
-  font-family: 'montserrat';
-}
-.previous:hover {
-  border: 1px solid white;
-  color: white;
-  background-color: #E30613;
-}
-@media screen and (max-width: 750px) {
-  .next {
-    float: left;
-    font-size: 10px;
-    width: 40%;
-  }
-  .previous {
-    font-size: 10px;
-    width: 40%;
-  }
-}
-
-/*mis en page de contact*/
-
-footer {
-  width: 100%;
-  height: 50%;
-  border-top: 2px solid #E30613;
-  font-family: 'montserrat';
-}
-
-/*mis en page du cadre de contact*/
-
-.contact1 {
-  width: 25%;
-  margin: auto;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  padding-bottom: 1%;
-  background-color: #F29100;
-  text-align: center;
-  display: block;
-  border-radius: 5px;
-  box-shadow: 8px -7px 22px #333333;
-}
-
-/*mis en page du texte contact*/
-
-.contact1 h3 {
-  color: white;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  border-bottom: 1px solid white;
-  font-size: 25px;
-}
-
-/*mis en page de nous contacter*/
-
-.contact1 p {
-  color: white;
-  float: left;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  margin-left: 3%;
-  font-size: 18px;
-}
-
-/*mis en page du boutton contact*/
-
-.lcontact {
-  background-color: #94C11F;
-  border: 1px solid white;
-  color: white;
-  font-size: 22px;
-  margin-top: 2%;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 8px 6px 8px #694817;
-}
-.lcontact:hover {
-  background-color: white;
-  border: 1px solid #878787;
-  color: black;
-}
-
-/*Copyright*/
-
-.Copyright {
-  float: right;
-  margin-right: 2%;
-}
-
-/*Faire un don*/
-
-.don {
-  margin-left: 2%;
-}
-.bdon {
-  border: 1px solid black;
-  background-color: white;
-  color: black;
-}
-
-/*agrandis le bloc contact sur petit ecrant*/
-
-@media screen and (max-width: 750px) {
-  .contact1 {
-    width: 60%;
-  }
-}
-
-/*effet parallax*/
-
-#slide0 {
-  height: 47vh;
-  background: url(../img/20160309_143554.jpg) 0 no-repeat fixed;
-  background-size: cover;
-  z-index: 100;
-}
-#slide01 {
-  height: 50vh;
-  background: url(../img/grasse.jpg) center 0 no-repeat fixed;
-  background-size: cover;
-}
-#slide1 {
-  height: 48vh;
-  background: url(../img/20160308_145117.jpg) 0 no-repeat fixed;
-  background-size: cover;
-  z-index: 100;
-}
-#slide2 {
-  height: 50vh;
-  background: url(../img/20160309_143742.jpg) center 0 no-repeat fixed;
-  background-size: cover;
-}
-#slide3 {
-  height: 50vh;
-  background: url(../img/20160308_144523.jpg) center 0 no-repeat fixed;
-  background-size: cover;
-}
-#slide4 {
-  height: 50vh;
-  background: url(../img/20160308_144523.jpg) center 0 no-repeat fixed;
-  background-size: cover;
-}
-#slide5 {
-  height: 50vh;
-  background: url(../img/20160309_144023.jpg) center 0 no-repeat fixed;
-  background-size: cover;
-}
-
-/*--------------------------------fin de page gestion et ressource des dechets---------------------------------------------*/
-
-
-/*---------------------------------Debut de Développement des mobilités------------------------------------------------*/
-
-
-/*mis en plage de présentation */
-
-.presentation7 {
-  border-top: 2px solid #175624;
-  border-bottom: 2px solid #175624;
-}
-.presentation8 {
-  border-top: 2px solid #F37022;
-  border-bottom: 2px solid #F37022;
-}
-.presentation9 {
-  border-top: 2px solid #639A1A;
-  border-bottom: 2px solid #639A1A;
-}
-.presentation10 {
-  border-top: 2px solid #4C4B4E;
-  border-bottom: 2px solid #4C4B4E;
-}
-.presentation11 {
-  border-top: 2px solid #FD8412;
-  border-bottom: 2px solid #FD8412;
-}
-.presentation12 {
-  border-top: 2px solid #FD8412;
-}
-
-/*mis en place du logo*/
-
-.eoep {
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  margin-bottom: 2%;
-}
-.resine {
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  margin-bottom: 2%;
-}
-.iniemploi {
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  margin-bottom: 2%;
-}
-.capg {
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  margin-bottom: 2%;
-}
-
-/*ajout du style au texte descriptif*/
-
-.description7 {
-  background-color: white;
-  padding-top: 1%;
-}
-.description8 {
-  background-color: white;
-  padding-top: 1%;
-}
-.description9 {
-  background-color: white;
-  padding-top: 1%;
-}
-.description10 {
-  background-color: white;
-  padding-top: 1%;
-}
-.description11 {
-  background-color: white;
-  padding-top: 1%;
-}
-.description12 {
-  background-color: white;
-  padding-top: 1%;
-}
-
-/*ajout du style au paragraphe du texte descriptif*/
-
-.description7 p {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: #175624;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-.description7 ul {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: #175624;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-.description8 p {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: #F37022;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-.description9 p {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: #639A1A;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-.description10 p {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: #4C4B4E;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-.description10 ul {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: #70B220;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-.description11 p {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: #655546;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-.description12 p {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: black;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-#slide8 {
-  height: 50vh;
-  background: url(../img/20160309_142150.jpg) center 0 no-repeat fixed;
-  background-size: cover;
-}
-#slide9 {
-  height: 50vh;
-  background: url(../img/20160308_144812.jpg) center 0 no-repeat fixed;
-  background-size: cover;
-}
-
-/*--------------------------------fin de page developpement des mobilités ---------------------------------------------*/
-
-
-/*---------------------------------Debut de Produire et échanger autrement--------------------------------------------------*/
-
-
-/*mis en plage de présentation */
-
-.presentation13 {
-  border-top: 2px solid #175624;
-  border-bottom: 2px solid #175624;
-}
-.presentation14 {
-  border-top: 2px solid #F37022;
-  border-bottom: 2px solid #F37022;
-}
-.presentation15 {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-}
-.presentation16 {
-  border-top: 2px solid #4C4B4E;
-  border-bottom: 2px solid #4C4B4E;
-}
-.presentation17 {
-  border-top: 2px solid #FD8412;
-}
-.presentation18 {
-  border-top: 2px solid #FD8412;
-}
-
-/*mis en place du logo*/
-
-.fdb {
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  margin-bottom: 2%;
-}
-.appeze {
-  font-family: 'montserrat';
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  margin-bottom: 2%;
-}
-
-/*ajout du style au texte descriptif*/
-
-.description13 {
-  background-color: white;
-  padding-top: 1%;
-}
-.description14 {
-  background-color: white;
-  padding-top: 1%;
-}
-.description15 {
-  background-color: white;
-  padding-top: 1%;
-}
-.description16 {
-  background-color: white;
-  padding-top: 1%;
-}
-.description17 {
-  background-color: white;
-  padding-top: 1%;
-}
-.description18 {
-  background-color: white;
-  padding-top: 1%;
-}
-
-/*ajout du style au paragraphe du texte descriptif*/
-
-.description13 p {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: #175624;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-.description13 ul {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: #175624;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-.description14 p {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: #F37022;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-.description15 p {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: black;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-.description16 p {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: #4C4B4E;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-.description16 ul {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: #70B220;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-.description17 p {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: #655546;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-.description17 p {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: #B8860B;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-.description17 ul {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: #B8860B;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-.description17 h1 {
-  font-family: 'montserrat';
-  text-align: center;
-  margin-bottom: 2%;
-  font-size: 45px;
-  color: #B8860B;
-}
-
-/*--------------------------------fin de page produire et échanger autrement---------------------------------------------*/
-
-
-/*--------------------------------Debut de Développement d'une économie sociale du numérique-------------------------------*/
-
-
-/*mis en plage de présentation */
-
-.presentation18 {
-  border-top: 2px solid #175624;
-  border-bottom: 2px solid #175624;
-}
-.presentation19 {
-  border-top: 2px solid #53AF32;
-  border-bottom: 2px solid #53AF32;
-}
-.presentation20 {
-  border-top: 2px solid #163C63;
-}
-.presentation21 {
-  border-top: 2px solid #4C4B4E;
-  border-bottom: 2px solid #4C4B4E;
-}
-.presentation22 {
-  border-top: 2px solid #FD8412;
-  border-bottom: 2px solid #FD8412;
-}
-.presentation23 {
-  border-top: 2px solid #FD8412;
-}
-
-/*mis en place du logo*/
-
-.eric21 {
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  margin-bottom: 2%;
-}
-.fablab {
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  margin-bottom: 2%;
-}
-
-/*ajout du style au texte descriptif*/
-
-.description18 {
-  background-color: white;
-  padding-top: 1%;
-}
-.description19 {
-  background-color: white;
-  padding-top: 1%;
-}
-.description20 {
-  background-color: white;
-  padding-top: 1%;
-}
-.description21 {
-  background-color: white;
-  padding-top: 1%;
-}
-.description22 {
-  background-color: white;
-  padding-top: 1%;
-}
-.description23 {
-  background-color: white;
-  padding-top: 1%;
-}
-
-/*ajout du style au paragraphe du texte descriptif*/
-
-.description18 p {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: #175624;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-.description18 ul {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: #175624;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-.description19 p {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: #53AF32;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-.description19 ul {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: #53AF32;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-.description20 p {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: #163C63;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-.description21 p {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: #4C4B4E;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-.description21 ul {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: #70B220;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-.description22 p {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: #655546;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-.description23 p {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: black;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-
-/*slide*/
-
-#slide10 {
-  height: 50vh;
-  background: url(../img/20160309_143554.jpg) center 0 no-repeat fixed;
-  background-size: cover;
-}
-
-/*--------------------------------fin de page developpement d'une économie sociale du numérique---------------------------------------------*/
-
-
-/*---------------------------------Debut de terre d'innovation-------------------------------------------------------------------------------*/
-
-
-/*slide terre d'innovation*/
-
-#slide6 {
-  height: 81vh;
-  background: url(../img/20160308_145404.jpg) 0 no-repeat fixed;
-  background-size: cover;
-}
-
-/*mis en page du haut de page*/
-
-.header1 {
-  padding-top: 1%;
-  padding-bottom: 3%;
-  text-align: center;
-  background-color: white;
-  color: #94C11F;
-  border-bottom: 2px solid #878787;
-  font-family: 'montserrat';
-}
-
-/*--------------------------------fin de page terre d'innovation---------------------------------------------*/
-
-
-/*---------------------------------Debut de Centre de recherche-----------------------------------------------*/
-
-.pdescriptioncentre {
-  border-top: 2px solid black;
-  font-family: 'montserrat';
-}
-/*Mis en place du texte centre de recherche*/
-
-.descriptioncentre {
-  margin-top: 2%;
-  margin-bottom: 2%;
-  font-family: 'montserrat';
-}
-.descriptioncentre h3 {
-  text-align: center;
-  margin-bottom: 2%;
-  color: #1E74BF;
-}
-.descriptioncentre p {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: #878787;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-.descriptioncentre li {
-  font-family: 'montserrat';
-  font-size: 14px;
-  color: #878787;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-
-/*mis en place des couleur*/
-.questionnement {
-  color: #94C120;
-}
-.theme {
-  color: #E30613;
-}
-.interface {
-  color: #F29100;
-}
-.moyens {
-  color: #1E74BF;
-}
-.lienb {
-  text-align: center;
-  margin: auto;
-  display: block;
-}
-/*mis en place du formulaire*/
-
-.main3 {
-  border-top: 2px solid black;
-  background-color: #1D70B8;
-}
-center {
-  display: block;
-  text-align: center;
-  margin: auto;
-  padding-top: 2%;
-  font-family: 'montserrat';
-  color: #878787;
-}
-.formf {
-  padding-top: 3%;
-}
-.nomf {
-  border: none;
-  margin-right: 1.3%;
-  height: 60px;
-  width: 20%;
-  font-size: 20px;
-  border-radius: 3px;
-  padding-left: 1%;
-}
-.prenomf {
-  border: none;
-  margin-left: 1.3%;
-  height: 60px;
-  width: 20%;
-  font-size: 20px;
-  border-radius: 3px;
-  padding-left: 1%;
-}
-.questionf {
-  margin-top: 1%;
-  font-size: 17px;
-  width: 43%;
-  padding-left: 1%;
-}
-.messagef {
-  padding-left: 1%;
-  margin-top: 2px;
-  width: 43%;
-  font-size: 20px;
-}
-.envoyerf {
-  border: none;
-  margin-right: 1%;
-  background-color: #393C45;
-  border-radius: 18px;
-  font-size: 20px;
-  width: 15%;
-  height: 45px;
-  color: white;
-}
-.envoyerf:hover {
-  background-color: white;
-  border: 1px solid black;
-  color: black;
-}
-.effacerf {
-  border: none;
-  margin-top: 1%;
-  background-color: #393C45;
-  border-radius: 18px;
-  font-size: 20px;
-  width: 15%;
-  height: 45px;
-  margin-left: 1%;
-  color: white;
-  margin-bottom: 1
-}
-.effacerf:hover {
-  background-color: white;
-  border: 1px solid black;
-  color: black;
-}
-
-/*agrandis le bouton envoyer et effacer sur petit ecrant*/
-
-@media screen and (max-width: 750px) {
-  .envoyerf {
-    width: 25%;
-  }
-  .effacerf {
-    width: 25%;
-  }
-  .effacerf {
-    width: 25%;
-  }
-  .nomf {
-    font-size: 14px;
-  }
-  .prenomf {
-    font-size: 14px;
-  }
-}
-
-/*slide Centre de recherche*/
-
-#slide7 {
-  height: 81vh;
-  background: url(../img/installation_HAUR.jpg) center 0 no-repeat fixed;
-  background-size: cover;
-  background-position: 0 -113px;
-}
-
-/*mis en page du haut de page*/
-
-.header2 {
-  padding-top: 1%;
-  padding-bottom: 3%;
-  text-align: center;
-  background-color: white;
-  color: #94C11F;
-  border-bottom: 2px solid #878787;
-  font-family: 'montserrat';
-}
-
-/*--------------------------------fin de page Centre de recherche---------------------------------------------*/
-
-
-/*----------------------------------Debut de galerie photo------------------------------------------------------*/
-
-#myCarousel {
-  margin-bottom: 2%;
-  border: 4px solid #C2C2C2;
-  border-radius: 5px;
-}
-
-/*----------------------------------Fin de galarie photo-----------------------------------------------------------*/
-
-
-/*-------------------------------- Debut de page Bénévolas----------------------------------------------------------*/
-
-
-/*slide*/
-
-#slide11 {
-  height: 50vh;
-  background: url(../img/20160308_144523.jpg) 0 no-repeat fixed;
-  background-size: cover;
-}
-
-/*mis en page du nuage bénévolas*/
-
-.nuage {
-  margin-top: 3%;
-  margin-left: 35%;
-  margin-left: 35%;
-  display: block;
-}
-
-/*---------------------------------Fin de page Bénévolas-----------------------------------------------------------*/
-
-
-/*----------------------------------Debut de page PTCE------------------------------------------------------------*/
-
-
-/*slide*/
-
-#slide12 {
-  height: 80vh;
-  background: url(../img/Descrip2.png) 0 no-repeat fixed;
-  background-size: cover;
-}
-
-/*Mis en page du texte*/
-
-.main5 {
-  border-top: 2px solid #878787;
-  color: #878787;
-}
-
-/*Mis en page des paragraphes*/
-
-.main5 p {
-  font-family: 'montserrat';
-  font-size: 14px;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-.main5 li {
-  font-family: 'montserrat';
-  font-size: 14px;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-
-/*Mis en place des couleurs*/
-
-.ptce1 {
-  color: #F39200;
-}
-.pole {
-  color: #94C11F;
-}
-.territoriaux {
-  color: #1D70B8;
-}
-.cooperation {
-  color: #E30613;
-}
-.economique {
-  color: #F39200
-}
-
-/*-------------------------------------Fin de ptce-------------------------------------------------------------------*/
-
-
-/*debut de centre de recherche v2*/
-
-.center2 {
-  height: 80vh;
-}
+    /*initialisation de la page */
+    /*-----------debut de Gestion des ressources et des déchets ---------------------*/
+
+    @font-face {
+      font-family: "montserrat";
+      src: url('../montserrat/Montserrat-Regular.otf');
+    }
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      width: 100%;
+    }
+    body {
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+    }
+    /*mis en page du haut de page*/
+
+    header {
+      padding-top: 1%;
+      padding-bottom: 3%;
+      text-align: center;
+      background-color: white;
+      color: #878787;
+      border-bottom: 2px solid #878787;
+      font-family: 'montserrat';
+    }
+    header h1 {
+      font-weight: bold;
+    }
+    header h1 a:link {
+      color: #878787;
+    }
+    /*mis en page de la barre de navigation*/
+
+    nav {
+      height: 160px;
+      margin-left: 1%;
+      margin-top: 1%;
+      position: fixed;
+      z-index: 500;
+      font-family: 'montserrat';
+      font-weight: normal;
+      font-style: normal;
+    }
+    .clic {
+      width: 60px;
+      height: 50px;
+      background-color: rgb(29, 112, 184);
+      border: 2px solid black;
+    }
+    .clic:hover {
+      color: white;
+      border: 2px solid white;
+    }
+    .navh {
+      background-color: rgb(29, 112, 184);
+      margin-top: 5%;
+      border: 2px solid black;
+    }
+    @media screen and (max-width: 768px) {
+      .clic {
+        background-color: rgba(29, 112, 184, 0.6);
+      }
+    }
+    .X {
+      cursor: pointer;
+      text-align: center;
+      background-color: rgb(29, 112, 184);
+      color: black;
+      width: 10%;
+      float: right;
+      margin-right: 2%;
+      margin-top: 2%;
+      font-size: 30px;
+      border: 2px solid black;
+      font-weight: bold;
+    }
+    .X:hover {
+      color: white;
+      border: 2px solid white;
+    }
+    nav ul {
+      list-style: none;
+      margin-right: 2%;
+      padding-top: 3%;
+      padding-bottom: 3%;
+      color: black;
+    }
+    nav li {
+      color: black;
+      cursor: pointer;
+      font-size: small;
+      margin-top: 8%;
+      border-bottom: 2px solid black;
+    }
+    nav li:hover {
+      color: white;
+    }
+    nav li:visited {
+      color: #800000;
+    }
+    /*Nav 4axes*/
+
+    .mondropdown {
+      font-family: 'montserrat';
+      font-weight: normal;
+      font-style: normal;
+      color: black
+    }
+    .mondropdown a:visited {
+      color: black;
+    }
+    .mondropdown a:hover {
+      color: white;
+    }
+    .dropbtn {
+      background-color: rgb(29, 112, 184);
+      color: black;
+      border: none;
+      cursor: pointer;
+    }
+    .dropdown-content {
+      font-family: 'montserrat';
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+    }
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      border-radius: 5px;
+    }
+    .dropdown-content a:hover {
+      background-color: black;
+      color: white;
+    }
+    .mondropdown:hover .dropdown-content {
+      display: block;
+    }
+    .mondropdown:hover .dropbtn {
+      background-color: rgb(29, 112, 184);
+      color: white;
+    }
+    /*reduit la bar de nav si ecran de telephone portable*/
+
+    @media screen and (max-width: 750px) {
+      nav {
+        width: 80%;
+      }
+    }
+    /*annule le le scrool sur 4axes si plus petit que 768px*/
+
+    @media screen and (max-width: 768px) {
+      .dropdown-content a {
+        display: none;
+      }
+    }
+    /*mis en plage de présentation */
+
+    .main {
+      font-family: 'montserrat';
+    }
+    .presentation1 {
+      border-top: 2px solid #175624;
+      border-bottom: 2px solid #175624;
+    }
+    .presentation2 {
+      border-top: 2px solid #F37022;
+      border-bottom: 2px solid #F37022;
+    }
+    .presentation3 {
+      border-top: 2px solid #639A1A;
+      border-bottom: 2px solid #639A1A;
+    }
+    .presentation4 {
+      border-top: 2px solid #70B220;
+      border-bottom: 2px solid #70B220;
+    }
+    .presentation5 {
+      border-top: 2px solid #FD8412;
+    }
+    .presentation6 {
+      border-top: 2px solid #FD8412;
+    }
+    /*mis en place du logo*/
+
+    .tedee {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 2%;
+    }
+    .choisir {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 2%;
+    }
+    .resine {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 2%;
+    }
+    .evaleco {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 2%;
+    }
+    .capg {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 2%;
+    }
+    .sescol {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 2%;
+    }
+    /*ajout du style au texte descriptif*/
+
+    .description {
+      background-color: white;
+      padding-top: 1%;
+    }
+    .description2 {
+      background-color: white;
+      padding-top: 1%;
+    }
+    .description3 {
+      background-color: white;
+      padding-top: 1%;
+    }
+    .description4 {
+      background-color: white;
+      padding-top: 1%;
+    }
+    .description5 {
+      background-color: white;
+      padding-top: 1%;
+    }
+    .description6 {
+      background-color: white;
+      padding-top: 1%;
+    }
+    /*ajout du style au paragraphe du texte descriptif*/
+
+    .description p {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: #175624;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .description2 p {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: #F37022;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .description3 p {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: #639A1A;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .description4 p {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: #70B220;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .description4 ul {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: #70B220;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .description5 p {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: #655546;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .description6 p {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: black;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .description6 ul {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: black;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    /*mis en page des paragraphes pour les petit ecran*/
+
+    @media screen and (max-width: 750px) {
+      .description p, .description2 p, .description3 p, .description4 p, .description5 p, .description6 p, .description4 ul, .description6 ul {
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+    }
+    /*Ajout du lien de redirection vers le site web*/
+
+    .lien1 p {
+      color: #0C3A63;
+      margin-left: 2%;
+    }
+    .lien1 p:hover {
+      color: black;
+    }
+    /*mis en page des 4 axes*/
+
+    section {
+      border-top: 3px solid #94C11F;
+      border-bottom: 3px solid #F29100;
+      background-color: rgba(148, 193, 31, 0.26);
+      font-family: 'montserrat';
+    }
+    /*mis en page du texte de section*/
+
+    section h1 {
+      text-align: center;
+      color: #848484;
+    }
+    /*placement et stylage des logo des axes*/
+
+    .logoaxe {
+      margin-top: 5%;
+    }
+    /*mis en place du bouton next*/
+
+    .next {
+      margin-right: 1%;
+      float: right;
+      border: 1px solid #E30613;
+      color: #E30613;
+      background-color: white;
+      border-radius: 5px;
+      font-family: 'montserrat';
+    }
+    .next:hover {
+      border: 1px solid white;
+      color: white;
+      background-color: #E30613;
+    }
+    /*mis en place du bouton previous*/
+
+    .previous {
+      margin-left: 1%;
+      float: left;
+      border: 1px solid #E30613;
+      color: #E30613;
+      background-color: white;
+      border-radius: 5px;
+      font-family: 'montserrat';
+    }
+    .previous:hover {
+      border: 1px solid white;
+      color: white;
+      background-color: #E30613;
+    }
+    /*mis en page des boutons pour les petits ecrans*/
+
+    @media screen and (max-width: 750px) {
+      .next {
+        float: right;
+        font-size: 10px;
+      }
+      .previous {
+        float: left;
+        font-size: 10px;
+      }
+    }
+    /*mis en page de contact*/
+
+    footer {
+      width: 100%;
+      height: 50%;
+      border-top: 2px solid #E30613;
+      font-family: 'montserrat';
+    }
+    /*mis en page du cadre de contact*/
+
+    .contact1 {
+      width: 25%;
+      margin: auto;
+      margin-top: 2%;
+      margin-bottom: 2%;
+      padding-bottom: 1%;
+      background-color: #F29100;
+      text-align: center;
+      display: block;
+      border-radius: 5px;
+      box-shadow: 8px -7px 22px #333333;
+    }
+    /*mis en page du texte contact*/
+
+    .contact1 h3 {
+      color: white;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      border-bottom: 1px solid white;
+      font-size: 25px;
+    }
+    /*mis en page de nous contacter*/
+
+    .contact1 p {
+      color: white;
+      float: left;
+      margin-top: 2%;
+      margin-bottom: 2%;
+      margin-left: 3%;
+      font-size: 18px;
+    }
+    /*mis en page du boutton contact*/
+
+    .lcontact {
+      background-color: #94C11F;
+      border: 1px solid white;
+      color: white;
+      font-size: 22px;
+      margin-top: 2%;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 8px 6px 8px #694817;
+    }
+    .lcontact:hover {
+      background-color: white;
+      border: 1px solid #878787;
+      color: black;
+    }
+    /*Copyright*/
+
+    .Copyright {
+      float: right;
+      margin-right: 2%;
+    }
+    /*Faire un don*/
+
+    .don {
+      margin-left: 2%;
+    }
+    .bdon {
+      border: 1px solid black;
+      background-color: white;
+      color: black;
+    }
+    /*agrandis le bloc contact sur petit ecrant*/
+
+    @media screen and (max-width: 750px) {
+      .contact1 {
+        width: 60%;
+      }
+    }
+    /*effet parallax*/
+
+    #slide0 {
+      height: 47vh;
+      background: url(../img/20160309_143554.jpg) 0 no-repeat fixed;
+      background-size: cover;
+      z-index: 100;
+    }
+    #slide01 {
+      height: 50vh;
+      background: url(../img/grasse.jpg) center 0 no-repeat fixed;
+      background-size: cover;
+    }
+    #slide1 {
+      height: 48vh;
+      background: url(../img/20160308_145117.jpg) 0 no-repeat fixed;
+      background-size: cover;
+      z-index: 100;
+    }
+    #slide2 {
+      height: 50vh;
+      background: url(../img/20160309_143742.jpg) center 0 no-repeat fixed;
+      background-size: cover;
+    }
+    #slide3 {
+      height: 50vh;
+      background: url(../img/20160308_144523.jpg) center 0 no-repeat fixed;
+      background-size: cover;
+    }
+    #slide4 {
+      height: 50vh;
+      background: url(../img/20160308_144523.jpg) center 0 no-repeat fixed;
+      background-size: cover;
+    }
+    #slide5 {
+      height: 50vh;
+      background: url(../img/20160309_144023.jpg) center 0 no-repeat fixed;
+      background-size: cover;
+    }
+    /*--------------------------------fin de page gestion et ressource des dechets---------------------------------------------*/
+    /*---------------------------------Debut de Développement des mobilités------------------------------------------------*/
+    /*mis en plage de présentation */
+
+    .presentation7 {
+      border-top: 2px solid #175624;
+      border-bottom: 2px solid #175624;
+    }
+    .presentation8 {
+      border-top: 2px solid #F37022;
+      border-bottom: 2px solid #F37022;
+    }
+    .presentation9 {
+      border-top: 2px solid #639A1A;
+      border-bottom: 2px solid #639A1A;
+    }
+    .presentation10 {
+      border-top: 2px solid #4C4B4E;
+      border-bottom: 2px solid #4C4B4E;
+    }
+    .presentation11 {
+      border-top: 2px solid #FD8412;
+      border-bottom: 2px solid #FD8412;
+    }
+    .presentation12 {
+      border-top: 2px solid #FD8412;
+    }
+    /*mis en place du logo*/
+
+    .eoep {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 2%;
+    }
+    .resine {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 2%;
+    }
+    .iniemploi {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 2%;
+    }
+    .capg {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 2%;
+    }
+    /*ajout du style au texte descriptif*/
+
+    .description7 {
+      background-color: white;
+      padding-top: 1%;
+    }
+    .description8 {
+      background-color: white;
+      padding-top: 1%;
+    }
+    .description9 {
+      background-color: white;
+      padding-top: 1%;
+    }
+    .description10 {
+      background-color: white;
+      padding-top: 1%;
+    }
+    .description11 {
+      background-color: white;
+      padding-top: 1%;
+    }
+    .description12 {
+      background-color: white;
+      padding-top: 1%;
+    }
+    /*ajout du style au paragraphe du texte descriptif*/
+
+    .description7 p {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: #175624;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .description7 ul {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: #175624;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .description8 p {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: #F37022;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .description9 p {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: #639A1A;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .description10 p {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: #4C4B4E;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .description10 ul {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: #70B220;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .description11 p {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: #655546;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .description12 p {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: black;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    /*mis en page des paragraphes pour les petit ecran*/
+
+    @media screen and (max-width: 750px) {
+      .description7 p, .description8 p, .description9 p, .description10 p, .description11 p, .description12 p, .description7 ul, .description10 ul {
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+    }
+    /*Mis en page des slides d'image*/
+
+    #slide8 {
+      height: 50vh;
+      background: url(../img/20160309_142150.jpg) center 0 no-repeat fixed;
+      background-size: cover;
+    }
+    #slide9 {
+      height: 50vh;
+      background: url(../img/20160308_144812.jpg) center 0 no-repeat fixed;
+      background-size: cover;
+    }
+    /*--------------------------------fin de page developpement des mobilités ---------------------------------------------*/
+    /*---------------------------------Debut de Produire et échanger autrement--------------------------------------------------*/
+    /*mis en plage de présentation */
+
+    .presentation13 {
+      border-top: 2px solid #175624;
+      border-bottom: 2px solid #175624;
+    }
+    .presentation14 {
+      border-top: 2px solid #F37022;
+      border-bottom: 2px solid #F37022;
+    }
+    .presentation15 {
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
+    }
+    .presentation16 {
+      border-top: 2px solid #4C4B4E;
+      border-bottom: 2px solid #4C4B4E;
+    }
+    .presentation17 {
+      border-top: 2px solid #FD8412;
+    }
+    .presentation18 {
+      border-top: 2px solid #FD8412;
+    }
+    /*mis en place du logo*/
+
+    .fdb {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 2%;
+    }
+    .appeze {
+      font-family: 'montserrat';
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 2%;
+    }
+    /*ajout du style au texte descriptif*/
+
+    .description13 {
+      background-color: white;
+      padding-top: 1%;
+    }
+    .description14 {
+      background-color: white;
+      padding-top: 1%;
+    }
+    .description15 {
+      background-color: white;
+      padding-top: 1%;
+    }
+    .description16 {
+      background-color: white;
+      padding-top: 1%;
+    }
+    .description17 {
+      background-color: white;
+      padding-top: 1%;
+    }
+    .description18 {
+      background-color: white;
+      padding-top: 1%;
+    }
+    /*ajout du style au paragraphe du texte descriptif*/
+
+    .description13 p {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: #175624;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .description13 ul {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: #175624;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .description14 p {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: #F37022;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .description15 p {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: black;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .description16 p {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: #4C4B4E;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .description16 ul {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: #70B220;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .description17 p {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: #B8860B;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .description17 ul {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: #B8860B;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .description17 h1 {
+      font-family: 'montserrat';
+      text-align: center;
+      margin-bottom: 2%;
+      font-size: 45px;
+      color: #B8860B;
+    }
+    /*mis en place des boutons next et previous*/
+
+    .next2 {
+      margin-right: 1%;
+      float: right;
+      border: 1px solid #E30613;
+      color: #E30613;
+      background-color: white;
+      border-radius: 5px;
+      font-family: 'montserrat';
+    }
+    .next2:hover {
+      border: 1px solid white;
+      color: white;
+      background-color: #E30613;
+    }
+    /*mis en place du bouton previous*/
+
+    .previous2 {
+      margin-left: 1%;
+      float: left;
+      border: 1px solid #E30613;
+      color: #E30613;
+      background-color: white;
+      border-radius: 5px;
+      font-family: 'montserrat';
+    }
+    .previous2:hover {
+      border: 1px solid white;
+      color: white;
+      background-color: #E30613;
+    }
+    /*mis en page des paragraphes pour les petit ecran*/
+
+    @media screen and (max-width: 750px) {
+      .description13 p, .description14 p, .description15 p, .description16 p, .description17 p, .description17 h1, .description13 ul, .description16 ul, .description17 ul {
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+    }
+    /*mis en page des boutons pour les petits ecrans*/
+
+    @media screen and (max-width: 750px) {
+      .next2 {
+        float: right;
+        font-size: 8px;
+      }
+      .previous2 {
+        float: left;
+        font-size: 8px;
+      }
+    }
+    /*--------------------------------fin de page produire et échanger autrement---------------------------------------------*/
+    /*--------------------------------Debut de Développement d'une économie sociale du numérique-------------------------------*/
+    /*mis en plage de présentation */
+
+    .presentation18 {
+      border-top: 2px solid #175624;
+      border-bottom: 2px solid #175624;
+    }
+    .presentation19 {
+      border-top: 2px solid #53AF32;
+      border-bottom: 2px solid #53AF32;
+    }
+    .presentation20 {
+      border-top: 2px solid #163C63;
+    }
+    .presentation21 {
+      border-top: 2px solid #4C4B4E;
+      border-bottom: 2px solid #4C4B4E;
+    }
+    .presentation22 {
+      border-top: 2px solid #FD8412;
+      border-bottom: 2px solid #FD8412;
+    }
+    .presentation23 {
+      border-top: 2px solid #FD8412;
+    }
+    /*mis en place du logo*/
+
+    .eric21 {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 2%;
+    }
+    .fablab {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 2%;
+    }
+    /*ajout du style au texte descriptif*/
+
+    .description18 {
+      background-color: white;
+      padding-top: 1%;
+    }
+    .description19 {
+      background-color: white;
+      padding-top: 1%;
+    }
+    .description20 {
+      background-color: white;
+      padding-top: 1%;
+    }
+    .description21 {
+      background-color: white;
+      padding-top: 1%;
+    }
+    .description22 {
+      background-color: white;
+      padding-top: 1%;
+    }
+    .description23 {
+      background-color: white;
+      padding-top: 1%;
+    }
+    /*ajout du style au paragraphe du texte descriptif*/
+
+    .description18 p {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: #175624;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .description18 ul {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: #175624;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .description19 p {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: #53AF32;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .description19 ul {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: #53AF32;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .description20 p {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: #163C63;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .description21 p {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: #4C4B4E;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .description21 ul {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: #70B220;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .description22 p {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: #655546;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .description23 p {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: black;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    /*mis en page des paragraphes pour les petit ecran*/
+
+    @media screen and (max-width: 750px) {
+      .description18 p, .description19 p, .description20 p, .description21 p, .description22 p, .description23 p, .description18 ul, .description19 ul, .description21 ul {
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+    }
+    /*slide*/
+
+    #slide10 {
+      height: 50vh;
+      background: url(../img/20160309_143554.jpg) center 0 no-repeat fixed;
+      background-size: cover;
+    }
+    #slide15 {
+      height: 50vh;
+      background: url(../img/20160324_104131.jpg) center 0 no-repeat fixed;
+      background-size: cover;
+    }
+    /*--------------------------------fin de page developpement d'une économie sociale du numérique---------------------------------------------*/
+    /*---------------------------------Debut de terre d'innovation-------------------------------------------------------------------------------*/
+    /*slide terre d'innovation*/
+
+    #slide6 {
+      height: 81vh;
+      background: url(../img/2) 0 no-repeat fixed;
+      background-size: cover;
+    }
+    /*mis en page du haut de page*/
+
+    .header1 {
+      padding-top: 1%;
+      padding-bottom: 3%;
+      text-align: center;
+      background-color: white;
+      color: #94C11F;
+      border-bottom: 2px solid #878787;
+      font-family: 'montserrat';
+    }
+    /*Mis en place du texte centre de recherche*/
+
+    main {
+      margin-top: 2%;
+      margin-bottom: 2%;
+      font-family: 'montserrat';
+    }
+    main h3 {
+      text-align: center;
+      margin-bottom: 2%;
+      color: #1E74BF;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+    main h4 {
+      font-family: 'montserrat';
+      color: #5F5C5C;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    main h5 {
+      font-family: 'montserrat';
+      color: #878787;
+      margin-left: 25%;
+      margin-right: 25%;
+      text-decoration: underline;
+    }
+    main p {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: #878787;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    main li {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: #878787;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    /*mis en page des paragraphes pour les petit ecran*/
+
+    @media screen and (max-width: 750px) {
+      main p, main li, main h3, main h4, main h5 {
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+    }
+    /*couleur des textes*/
+
+    .pourqui {
+      color: #94C120;
+    }
+    .pourquoi {
+      color: #E30613;
+    }
+    .comment {
+      color: #F29100;
+    }
+    .possibilite {
+      color: #1E74BF;
+    }
+    .centrere {
+      cursor: pointer;
+      border: 1px solid #E30613;
+      color: #E30613;
+      background-color: white;
+      border-radius: 3px;
+    }
+    /*--------------------------------fin de page terre d'innovation---------------------------------------------*/
+    /*---------------------------------Debut de Centre de recherche-----------------------------------------------*/
+
+    .pdescriptioncentre {
+      border-top: 2px solid black;
+      font-family: 'montserrat';
+    }
+    /*Mis en place du texte centre de recherche*/
+
+    .descriptioncentre {
+      margin-top: 2%;
+      margin-bottom: 2%;
+      font-family: 'montserrat';
+    }
+    .descriptioncentre h3 {
+      text-align: center;
+      margin-bottom: 2%;
+      color: #1E74BF;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+    .descriptioncentre h4 {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: #878787;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .descriptioncentre p {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: #878787;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .descriptioncentre li {
+      font-family: 'montserrat';
+      font-size: 14px;
+      color: #878787;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    /*mis en page des paragraphes pour les petit ecran*/
+
+    @media screen and (max-width: 750px) {
+      .descriptioncentre p, .descriptioncentre li, .descriptioncentre h3, .descriptioncentre h4 {
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+    }
+    /*mis en place des couleur*/
+
+    .questionnement, .recherchescien, .accueilcherche {
+      color: #94C120;
+    }
+    .permettant, .recherchedev, .intervention {
+      color: #E30613;
+    }
+    .interface, .colloques {
+      color: #F29100;
+    }
+    .moyens, .seminaires {
+      color: #1E74BF;
+    }
+    .lienb {
+      text-align: center;
+      margin: auto;
+      display: block;
+    }
+    /*Bouton vers innovation social*/
+
+    .ino {
+      cursor: pointer;
+      border: 1px solid #94C120;
+      color: #94C120;
+      background-color: white;
+      border-radius: 3px;
+    }
+    /*mis en place du formulaire*/
+
+    .main3 {
+      border-top: 2px solid black;
+      background-color: #1D70B8;
+    }
+    center {
+      display: block;
+      text-align: center;
+      margin: auto;
+      padding-top: 2%;
+      font-family: 'montserrat';
+      color: #878787;
+    }
+    .formf {
+      padding-top: 3%;
+    }
+    .nomf {
+      border: none;
+      margin-right: 1.3%;
+      height: 60px;
+      width: 20%;
+      font-size: 20px;
+      border-radius: 3px;
+      padding-left: 1%;
+    }
+    .prenomf {
+      border: none;
+      margin-left: 1.3%;
+      height: 60px;
+      width: 20%;
+      font-size: 20px;
+      border-radius: 3px;
+      padding-left: 1%;
+    }
+    .questionf {
+      margin-top: 1%;
+      font-size: 17px;
+      width: 43.1%;
+      padding-left: 1%;
+      margin-left: -0.1%;
+    }
+    .messagef {
+      padding-left: 1%;
+      margin-top: 2px;
+      width: 43%;
+      font-size: 20px;
+    }
+    .envoyerf {
+      border: none;
+      margin-right: 1%;
+      background-color: #393C45;
+      border-radius: 18px;
+      font-size: 20px;
+      width: 15%;
+      height: 45px;
+      color: white;
+    }
+    .envoyerf:hover {
+      background-color: white;
+      border: 1px solid black;
+      color: black;
+    }
+    .effacerf {
+      border: none;
+      margin-top: 1%;
+      background-color: #393C45;
+      border-radius: 18px;
+      font-size: 20px;
+      width: 15%;
+      height: 45px;
+      margin-left: 1%;
+      color: white;
+      margin-bottom: 1%;
+    }
+    .effacerf:hover {
+      background-color: white;
+      border: 1px solid black;
+      color: black;
+    }
+    /*agrandis le bouton envoyer et effacer sur petit ecrant*/
+
+    @media screen and (max-width: 750px) {
+      .envoyerf {
+        width: 25%;
+      }
+      .effacerf {
+        width: 25%;
+      }
+      .effacerf {
+        width: 25%;
+      }
+      .nomf {
+        font-size: 14px;
+      }
+      .prenomf {
+        font-size: 14px;
+      }
+    }
+    /*slide Centre de recherche*/
+
+    #slide7 {
+      height: 81vh;
+      background: url(../img/installation_HAUR.jpg) center 0 no-repeat fixed;
+      background-size: cover;
+      background-position: 0 -113px;
+    }
+    /*mis en page du haut de page*/
+
+    .header2 {
+      padding-top: 1%;
+      padding-bottom: 3%;
+      text-align: center;
+      background-color: white;
+      color: #94C11F;
+      border-bottom: 2px solid #878787;
+      font-family: 'montserrat';
+    }
+    /*--------------------------------fin de page Centre de recherche---------------------------------------------*/
+    /*----------------------------------Debut de galerie photo------------------------------------------------------*/
+
+    #myCarousel {
+      margin-bottom: 2%;
+      border: 4px solid #C2C2C2;
+      border-radius: 5px;
+    }
+    /*----------------------------------Fin de galarie photo-----------------------------------------------------------*/
+    /*-------------------------------- Debut de page Bénévolas----------------------------------------------------------*/
+    /*slide*/
+
+    #slide11 {
+      height: 50vh;
+      background: url(../img/20160308_144523.jpg) 0 no-repeat fixed;
+      background-size: cover;
+    }
+    /*mis en page du nuage bénévolas*/
+
+    .nuage {
+      margin-top: 3%;
+      margin-left: 35%;
+      margin-left: 35%;
+      display: block;
+    }
+    /*---------------------------------Fin de page Bénévolas-----------------------------------------------------------*/
+    /*----------------------------------Debut de page PTCE------------------------------------------------------------*/
+    /*slide*/
+
+    #slide12 {
+      height: 80vh;
+      background: url(../img/Descrip2.png) 0 no-repeat fixed;
+      background-size: cover;
+    }
+    /*Mis en page du texte*/
+
+    .main5 {
+      border-top: 2px solid #878787;
+      color: #878787;
+    }
+    /*Mis en page des paragraphes*/
+
+    .main5 p {
+      font-family: 'montserrat';
+      font-size: 14px;
+      margin-top: 2%;
+      margin-bottom: 2%;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .main5 li {
+      font-family: 'montserrat';
+      font-size: 14px;
+      margin-top: 2%;
+      margin-bottom: 2%;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    /*mis en page des paragraphes pour les petit ecran*/
+
+    @media screen and (max-width: 750px) {
+      .main5 p, .main5 li {
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+    }
+    /*Mis en place des couleurs*/
+
+    .ptce1 {
+      color: #F39200;
+    }
+    .pole {
+      color: #94C11F;
+    }
+    .territoriaux {
+      color: #1D70B8;
+    }
+    .cooperation {
+      color: #E30613;
+    }
+    .economique {
+      color: #F39200
+    }
+    /*-------------------------------------Fin de ptce-------------------------------------------------------------------*/
+    /*debut de centre de recherche v2*/
+    .center2 {
+      height: 80vh;
+    }
+/*----------------------------------------------fin de recherche V2----------------------------------------------*/
+
+/*------------------------------------------------Debut de incubateur de projets--------------------------------------------*/

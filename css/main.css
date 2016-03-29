@@ -795,6 +795,12 @@ footer {
   background-size: cover;
   border-top: 2px solid #1D71BA;
 }
+#slide5 {
+  height: 100vh;
+  background: url(../img/20160324_104131.jpg) center 0 no-repeat fixed;
+  background-size: cover;
+  border-top: 2px solid #1D71BA;
+}
 #video {
   position: relative;
   padding-bottom: 56.25%;

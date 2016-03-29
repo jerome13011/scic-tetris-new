@@ -99,15 +99,16 @@ nav li:visited {
 
 /*Nav 4axes*/
 
-.dropdown {
+.mondropdown {
   font-family: 'montserrat';
   font-weight: normal;
   font-style: normal;
+  color: black
 }
-.dropdown a:visited {
+.mondropdown a:visited {
   color: black;
 }
-.dropdown a:hover {
+.mondropdown a:hover {
   color: white;
 }
 .dropbtn {
@@ -117,6 +118,7 @@ nav li:visited {
   cursor: pointer;
 }
 .dropdown-content {
+  font-family: 'montserrat';
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -135,10 +137,10 @@ nav li:visited {
   background-color: black;
   color: white;
 }
-.dropdown:hover .dropdown-content {
+.mondropdown:hover .dropdown-content {
   display: block;
 }
-.dropdown:hover .dropbtn {
+.mondropdown:hover .dropbtn {
   background-color: rgb(29, 112, 184);
   color: white;
 }
@@ -159,15 +161,121 @@ nav li:visited {
   }
 }
 
-/*mis en place du formulaire de don*/
-
-.formdon {
+/*mis en place du texte de don*/
+.maindon {
   margin-top: 2%;
+}
+
+/*mis en place du texte*/
+.maindon h4{
+  font-family: 'montserrat';
+  color: #878787;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.maindon ul{
+  font-family: 'montserrat';
+  margin-bottom: 4%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.maindon p{
+  font-family: 'montserrat';
+  margin-left: 25%;
+  margin-right: 25%;
+  color: #878787;
+}
+.gestion1 {
+  color: #639A1A;
+}
+.developpement1 {
+  color: #1D6EB5;
+}
+.produire1 {
+  color: #E00613;
+}
+.developpement2 {
+  color: #F09000;
+}
+
+/*mis en page des paragraphes pour les petit ecran*/
+@media screen and (max-width: 750px) {
+  .maindon p, .maindon ul, .maindon h4 {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+/*Mis en place des bouton*/
+.pres {
   text-align: center;
+  margin: auto;
+  display: block;
+  margin-top: 1%;
+  margin-bottom: 3%;
+}
+.gestionb {
+  border: 1px solid #639A1A;
+  color: #639A1A;
+  background-color: white;
+  border-radius: 3px;
+}
+.gestionb:hover {
+  color: black;
+  border: 1px solid black;
+}
+
+.devb {
+  margin-left: 1%;
+  border: 1px solid #1D6EB5;
+  color: #1D6EB5;
+  background-color: white;
+border-radius: 3px;
+}
+.devb:hover {
+  color: black;
+  border: 1px solid black;
+}
+
+.prodb {
+  margin-left: 1%;
+  border: 1px solid #E00613;
+  color: #E00613;
+  background-color: white;
+  border-radius: 3px;
+}
+.prodb:hover {
+  color: black;
+  border: 1px solid black;
+}
+
+.dev2b {
+  margin-left: 1%;
+  border: 1px solid #F09000;
+  color: #F09000;
+  background-color: white;
+  border-radius: 3px;
+}
+.dev2b:hover {
+  color: black;
+  border: 1px solid black;
+}
+
+.doncontact p {
+  color: black;
+}
+
+/*mis en page des paragraphes pour les petit ecran*/
+@media screen and (max-width: 750px) {
+  .pres {
+    margin-left: 2%;
+    text-align: left;
+  }
+  .pres p{
+    font-size: 12px;
+  }
 }
 
 /*Bouton accueil*/
-
 .next {
   text-align: center;
   margin: auto;

@@ -98,19 +98,18 @@ nav li:visited {
   color: #800000;
 }
 /*Nav 4axes*/
-
-.dropdown {
+.mondropdown {
   font-family: 'montserrat';
   font-weight: normal;
   font-style: normal;
+  color: black
 }
-.dropdown a:visited {
+.mondropdown a:visited {
   color: black;
 }
-.dropdown a:hover {
+.mondropdown a:hover {
   color: white;
 }
-
 .dropbtn {
   background-color: rgb(29, 112, 184);
   color: black;
@@ -118,6 +117,7 @@ nav li:visited {
   cursor: pointer;
 }
 .dropdown-content {
+  font-family: 'montserrat';
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -136,13 +136,14 @@ nav li:visited {
   background-color: black;
   color: white;
 }
-.dropdown:hover .dropdown-content {
+.mondropdown:hover .dropdown-content {
   display: block;
 }
-.dropdown:hover .dropbtn {
+.mondropdown:hover .dropbtn {
   background-color: rgb(29, 112, 184);
   color: white;
 }
+
 /*reduit la bar de nav si ecran de telephone portable*/
 @media screen and (max-width: 750px) {
   nav {
