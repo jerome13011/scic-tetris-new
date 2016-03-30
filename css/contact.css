@@ -145,16 +145,36 @@ nav li:visited {
 }
 
 /*reduit la bar de nav si ecran de telephone portable*/
+
 @media screen and (max-width: 750px) {
   nav {
     width: 80%;
   }
 }
 
+@media screen and (max-width: 750px) {
+  nav li {
+    margin-top: 4%;
+  }
+}
+
+@media screen and (max-height: 400px) {
+  nav li{
+    font-size: 11px;
+    margin-top: 4%;
+    margin-right: 2%;
+    }
+}
 /*annule le le scrool sur 4axes si plus petit que 768px*/
+
 @media screen and (max-width: 768px) {
   .dropdown-content a {
     display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .clic {
+    background-color: rgba(29, 112, 184, 0.6);
   }
 }
 
