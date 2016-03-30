@@ -164,6 +164,12 @@ nav li:visited {
     margin-right: 2%;
     }
 }
+
+@media screen and (max-height: 400px) {
+  .navh {
+  margin-top: 0.5%;
+    }
+}
 /*annule le le scrool sur 4axes si plus petit que 768px*/
 
 @media screen and (max-width: 768px) {
